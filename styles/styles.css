@@ -1,0 +1,542 @@
+/*=============================================================================
+                                  CSS GENERAL
+===========================================================================*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #41464B;
+}
+
+p {
+  color: #64707b;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/*=============================================================================
+                                  HOME
+===========================================================================*/
+
+#home {
+  height: 100%;
+}
+
+#home-cover {
+  height: 100%;
+  background-image: url(../img/galeria9.jpg);
+}
+
+#home-content-box {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-box-inner {
+  display: table-cell;
+  /*ALINEA CONTENIDO EN EL MEDIO DEL PADRE CONTENEDOR*/
+  vertical-align: middle;
+  /*SE PUEDE USAR TANTO CON TEXT ALIGN COMO CON LA CLASS TEXT-CENTER DE BOOTSTRAP */
+  /* text-align: center; */
+}
+
+#home-heading h3 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+
+
+/*=============================================================================
+                                  SUBRAYADO
+===========================================================================*/
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #ffe806 0%, #707270 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+}
+
+.underline--magical:hover{
+  transition: 0.25s ease-in;
+  background-size: 100% 88%;
+}
+
+
+/*=============================================================================
+                                  PARALLAX EFFECT
+===========================================================================*/
+
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*EFECTO PARALLAX*/
+  background-attachment: fixed;
+}
+
+/*=============================================================================
+                                  ANIMATION
+===========================================================================*/
+
+#home-cover #home-heading #home-btn {
+  -vendor-animation-duration: .3s;
+}
+
+#home-cover {
+  -vendor-animation-delay: .1s;
+}
+
+#home-heading {
+  animation-delay: .3s
+}
+
+#home-btn {
+  animation-delay: .1s;
+}
+
+/*=============================================================================
+                                  BUTTONS
+===========================================================================*/
+
+.btn-general {
+  border-width: 5px;
+  border-radius: 0;
+  padding: 12px 26px 12px 26px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.btn-white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-white:hover, .btn-white:focus {
+  background-color: #fff;
+  color: #41464b;
+}
+
+.btn-blue {
+  border-color: #ffe806;
+  color: #707270;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+  background-color: #ffe806;
+  color: #fff;
+}
+
+/*=============================================================================
+                                  CONTENT
+===========================================================================*/
+
+.content-box {
+  padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+  width: 30px;
+  height: 3px;
+  background-color: #ffe806;
+  margin: 0 auto 0 auto;
+  margin-bottom: 30px;
+}
+
+.content-title-white h3 {
+  color: #fff;
+}
+
+/*=============================================================================
+                                  SERVICIOS
+===========================================================================*/
+
+.iconos {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  margin-right: 25px;
+  align-content: center;
+}
+
+.service-item {
+  padding: 20px 0 2px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service-item:hover .iconos {
+  /*Si fuese un icon, cambiando el color de la font y el background se crea un buen efecto */
+  background-color: #ffe806;
+}
+
+.service-item-title h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+  margin: 0;
+  padding-left: 35px;
+}
+
+/*=============================================================================
+                                  ABOUT
+===========================================================================*/
+
+#about-bg-diagonal {
+  width: 60%;
+  height: 700px;
+  float: right;
+  border-left: 200px solid #fff;
+  border-top: 700px solid transparent;
+}
+
+#about-content-box {
+  float: left;
+  height: 700px;
+}
+
+#about-content-box-outer {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#about-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#about .content-title h3 {
+  text-align: left;
+}
+
+#about .content-title-underline {
+  margin: 0 0 30px 0;
+}
+
+#about-description p {
+  margin-bottom: 30px;
+}
+
+/*=============================================================================
+                                  TRABAJOS
+===========================================================================*/
+
+/*selecciona todas las columnas dentro de .row.no-gutters*/
+
+.row.no-gutters [class*=col-] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: transform .5s ease;
+  /*delay del zoom */
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  /*1.5 del tamano original en hover */
+  cursor: zoom-in;
+}
+
+/*=============================================================================
+                                  NOSOTROS
+===========================================================================*/
+
+.team-member {
+  margin: 0 15px;
+}
+
+.team-member-info {
+  padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 2px
+}
+
+h4.team-member-designation {
+  color: #ffe806;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+/*=============================================================================
+                                  SOCIAL
+===========================================================================*/
+
+.social-list {
+  padding-left: 0;
+}
+
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.social-icon i {
+  font-size: 17px;
+}
+
+.icon-gray i {
+  color: #64707b;
+}
+
+.social-icon i:hover {
+  color: #ffe806;
+}
+
+.icon-white i{
+  color: #fff;
+}
+
+/*=============================================================================
+                                  TESTIMONIOS
+===========================================================================*/
+
+#testimonials-cover {
+  background-image: url(../img/testimonios.jpg);
+}
+
+#testimonials .content-box {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#customer-testimonials {
+  padding: 50px 0;
+}
+
+#testimonials img {
+  max-width: 120px;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+}
+
+.testimonial blockquote {
+  border: 0;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  color: #fff;
+  padding: 6px 150px;
+  position: relative;
+}
+
+.testimonial blockquote p {
+  color: #fff;
+}
+
+.testimonial blockquote::before, .testimonial blockquote::after {
+  font-size: 80px;
+  font-size: normal;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.testimonial blockquote::before {
+  content: "\201C";
+  top: 0;
+  left: 100px;
+}
+
+.testimonial blockquote::after {
+  content: "\201D";
+  bottom: 0;
+  right: 100px;
+}
+
+.testimonial-author p {
+  color: #fff;
+  font-size: 17px;
+}
+
+.testimonial-author p strong {
+  display: block;
+}
+
+/*=============================================================================
+                                  ESTADÍSTICAS
+===========================================================================*/
+
+
+
+#stats-cover {
+  background-image: url(../img/stats.jpg);
+}
+
+.stats-item img {
+  max-width: 60px;
+}
+
+#stats .content-box {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.stats-item {
+  padding: 100px 0;
+}
+
+.stats-item h2 {
+  color: #ffe806;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.stats-item p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+
+/*=============================================================================
+                                  SPONSORS
+===========================================================================*/
+
+.sponsor{
+  padding: 40px 0;
+}
+
+
+/*=============================================================================
+                                  CONTACTO
+===========================================================================*/
+
+footer{
+  background-color: #41464b;
+  padding-top: 30px;
+  border-top: 5px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+#contact-left h3, #contact-right h3{
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#contact-left p{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+address{
+  color: #fff;
+}
+
+address strong, #phone-email strong{
+  letter-spacing: 1px;
+}
+
+form .form-control{
+  background: transparent;
+  border-radius: 0;
+  border-color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+
+/*=============================================================================
+                                  NAVIGATION
+===========================================================================*/
+
+
+
+.navbar{
+  padding: 20px 0px;
+  transition: all .5s ease-in-out; /*Hace del efecto del ocultamiento del style del menú mas suave */
+}
+
+.navbar-brand{
+  position:
+}
+
+.cg-top-nav{
+  background: rgba(0,0,0,0.7);
+  padding: 7px 0;
+}
+
+.cg-nav-wrapper{
+  padding: 0 85px;
+}
+
+.navbar-nav{
+  float: right;
+}
+
+.navbar-nav > li > a{
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+  background: none;
+  color: #ffe806;
+}
+
+.navbar-toggle{
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+
+.navbar-collapse{
+  max-height: none !important;
+}
+
+.cg-top-nav ul.navbar-nav > li.active > a{
+  color: #ffe806;
+}
