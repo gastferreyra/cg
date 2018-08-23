@@ -27,39 +27,34 @@ p {
 
 
 #home-productos {
-  height: 50%;
+  height: 1280px;
 }
 
 #home-cover {
   height: 100%;
-  background-image: url(../img/portada.jpg);
-}
-#home-cover2 {
-  height: 100%;
-  background-image: url(../img/diagonal.jpg);
+background-image: url(../img/portadas/otra2bis.jpg);
+  background-repeat: repeat;
+  display: flex;
+  align-items: stretch;
+  perspective: 1500px;
 }
 
 #home-content-box {
   width: 100%;
   height: 100%;
   display: table;
-}
+} */
 
 
 #home-content-box-inner {
   display: table-cell;
   /*ALINEA CONTENIDO EN EL MEDIO DEL PADRE CONTENEDOR*/
-  vertical-align: middle;
+   vertical-align: middle;
   /*SE PUEDE USAR TANTO CON TEXT ALIGN COMO CON LA CLASS TEXT-CENTER DE BOOTSTRAP */
-  /* text-align: center; */
+  text-align: center;
 }
 
-#home-heading h3 {
-  color: #fff;
-  font-size: 55px;
-  font-weight: 700;
-  margin: 20px 0 20px 0;
-}
+
 
 
 
@@ -178,33 +173,6 @@ p {
 
 
 
-/*=============================================================================
-                                  OBRAS
-===========================================================================*/
-
-/*selecciona todas las columnas dentro de .row.no-gutters*/
-
-.row.no-gutters [class*=col-] {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.img-wrapper {
-  overflow: hidden;
-}
-
-.img-wrapper img {
-  transition: transform .5s ease;
-  /*delay del zoom */
-}
-
-
-
-.img-wrapper img:hover {
-  transform: scale(1.5);
-  /*1.5 del tamano original en hover */
-  cursor: zoom-in;
-}
 
 
 
@@ -263,13 +231,24 @@ form .form-control{
 
 
 
+
+/*=============================================================================
+                                  NAVIGATION
+===========================================================================*/
+
+
+
 .navbar{
   padding: 20px 0px;
   transition: all .5s ease-in-out; /*Hace del efecto del ocultamiento del style del menú mas suave */
 }
 
+.navbar-brand{
+  position: block;
+}
+
 .cg-top-nav{
-  background: rgba(0,0,0,0.7);
+  background: rgb(255, 254, 254);
   padding: 7px 0;
 }
 
@@ -282,7 +261,6 @@ form .form-control{
 }
 
 .navbar-nav > li > a{
-  color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -291,7 +269,6 @@ form .form-control{
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
   background: none;
-  color: #d5c84b;
 }
 
 .navbar-toggle{
@@ -309,77 +286,208 @@ form .form-control{
 }
 
 .cg-top-nav ul.navbar-nav > li.active > a{
-  color: #d5c84b;
+  color: #ffe806;
 }
 
-.linea {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
+/*Prod-submenu*/
 
-  display: inline-block;
-  padding: 15px 20px;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}
+
+header h3 {
+	font-size: 30px;
+	text-align: center;
+}
+
+header h3 a {
+	color: #FFF;
+}
+
+header a {
+	color: #FFF;
+}
+
+header h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+header p {
+	text-align: center;
+}
+
+header nav {
+	margin: 0px 0;
+}
+
+header nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
   position: relative;
-}
-.linea:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.2s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.linea:hover:after {
-  width: 100%;
-  left: 0;
+	}
+
+header nav ul li {
+  display:inline-block;
+	}
+
+header nav li a.smooth-scroll {
+  color: white;
 }
 
+header nav a {
+	display:block;
+	padding:0 10px;
+	color:black;
+	font-size:15px;
+	line-height: 60px;
+  text-decoration:none;
+}
+
+header nav a.smooth-scroll:hover {
+  background-color: white;
+  color: black;
+}
+
+header nav ul li div ul {
+  height: 0;
+  position: absolute;
+  background-color: white;
+  top: 42px;
+}
+
+/* Fisrt Tier Dropdown */
+header nav ul ul div li {
+  display: none;
+}
+
+/* Display Dropdowns on Hover */
+
+header nav ul li:hover > div ul {
+  display: block;
+  height: 347px;
+}
+
+header nav ul li:hover ul li{
+  display: block;
+}
+
+.a-products{
+  color: rgb(39, 40, 41);
+  font-weight: 700;
+}
+
+.a-products:hover{
+  color: black;
+  text-shadow: 0px 0.1px gray;
+  text-decoration: none !important;
+}
+
+header nav ul li:hover {
+  transition: background-color .6s ease-out;
+  background-color: white;
+}
+
+header nav ul li:hover a.smooth-scroll{
+  color: rgb(70,64,64) !important;
+}
+
+header nav ul ul li {
+width: 170px;
+float: none;
+position: relative;
+padding-bottom: 13px;
+margin-left: 29px;
+bottom: -27px;
+border-left: 4px solid #fff173;
+}
+
+header nav ul li div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -1000px;
+  opacity: 0;
+  transition: opacity .6s ease-out;
+}
+
+header nav ul li:hover div {
+  top: -45px;
+  opacity: 1;
+}
+
+header nav ul ul {
+  display: inline-block;
+  width: 794px;
+  left: -311px;
+}
+
+header nav ul li img {
+  width: 500px;
+  height: 300px;
+  z-index: 1;
+  position: absolute;
+  right: -581px;
+  top: -2px;
+  object-fit: contain;
+}
+
+header nav ul li img.img-2 {
+  top: -75px;
+}
+
+header nav ul li img.img-3 {
+  top: -148px;
+}
+
+header nav ul li img.img-4 {
+  top: -221px;
+}
+
+header nav ul li img.img-default{
+  top: 67px;
+  left: -31px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.li-img img{
+  transition: opacity .5s ease-in-out;
+  opacity: 0;
+}
+
+.li-img:hover img {
+  opacity: 1;
+  z-index: 999;
+}
 
 /*=============================================================================
-                                LOGO CG
+                                LOGOCG
 ===========================================================================*/
 
 #logocg{
-  width: 90%;
+  width: 100%;
   margin-top: -15px;
 }
 
 
 
 
-
-
-#prueba {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-.wrapper {
-    display: flex;
-    align-items: stretch;
-    perspective: 1500px;
-}
-
 #sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -390,6 +498,10 @@ form .form-control{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     color: #41464B;
+    background-color: #333333;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 180px;
+
 }
 
 #sidebar a{
@@ -411,7 +523,7 @@ form .form-control{
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #252525;
+    background: #333333;
 }
 
 #sidebar ul.components {
@@ -489,12 +601,16 @@ form .form-control{
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 180px;
+    margin-right: 40px;
 }
 
 #sidebarCollapse {
     width: 40px;
     height: 40px;
-    background: #f5f5f5;
+    background: #CCCCCC;
+    margin-top: 180px;
 }
 
 #sidebarCollapse span {
@@ -523,6 +639,48 @@ form .form-control{
     opacity: 1;
     margin: 5px auto;
 }
+
+
+/*=============================================================================
+                                PRODUCTOS (FOTOS)
+===========================================================================*/
+
+.thumbnail{
+  border: none;
+  border-radius: 10px;
+}
+
+.caption{
+  padding-bottom: 10px;
+}
+
+
+.thumbnail img{
+  width: 80%;
+}
+
+.caption h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.caption h3,i{
+  margin-left: 15px;
+  color: #333333;
+
+}
+
+
+
+.thumbnail,h3,img,a:hover{
+  text-decoration: none;
+
+}
+
+
 
 
 /* ---------------------------------------------------
@@ -557,4 +715,124 @@ form .form-control{
         transform: rotate(-45deg) translate(1px, -1px);
     }
 
+}
+
+
+
+.snip1401 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 220px;
+  width: 100%;
+  color: #000000;
+  text-align: right;
+  font-size: 16px;
+  background-color: #000000;
+}
+.snip1401 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1401 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+.snip1401 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  padding: 30px 0 30px 10px;
+  background-color: #ffffff;
+  width: 40%;
+  -webkit-transform: translateX(150%);
+  transform: translateX(150%);
+}
+.snip1401 figcaption:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 100%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 120px 120px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+.snip1401:after {
+  position: absolute;
+  bottom: 50%;
+  right: 40%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 120px 0 120px;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1401 h3,
+.snip1401 p {
+  line-height: 1.5em;
+  -webkit-transform: translateX(-30px);
+  transform: translateX(-30px);
+  margin: 0;
+}
+.snip1401 h3 {
+  margin: 0 0 5px;
+  line-height: 1.1em;
+  font-weight: 900;
+  font-size: 1.4em;
+  opacity: 0.75;
+}
+.snip1401 p {
+  font-size: 0.8em;
+}
+.snip1401 i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 30px;
+  font-size: 25px;
+  color: #ffffff;
+  opacity: 0;
+}
+.snip1401 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1401:hover img,
+.snip1401.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+.snip1401:hover:after,
+.snip1401.hover:after,
+.snip1401:hover figcaption,
+.snip1401.hover figcaption,
+.snip1401:hover i,
+.snip1401.hover i {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }

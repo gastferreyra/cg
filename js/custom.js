@@ -60,11 +60,11 @@ $(function() {
 
 
 /*===========================================================================
-                                SPONSORS
+                                clientes
 ===========================================================================*/
 $(function() {
-  $("#sponsors-list").owlCarousel({
-    items: 3,
+  $("#clientes-list").owlCarousel({
+    items: 5,
     autoplay: true,
     smartSpeed: 700,
     loop: true,
@@ -76,18 +76,18 @@ $(function() {
                                 NAVIGATION
 ===========================================================================*/
 $(function() {
-  $(window).scroll(function(){
-    if ($(this).scrollTop()<50) {
-      /* Si window scroll top es menor a 50px esconder navigation bar */
-      $("nav").removeClass("cg-top-nav");
-    } else {
-      /* Si es mayor, mostrar navigation bar */
-      $("nav").addClass("cg-top-nav");
-    }
-
-    });
-  });
-
+ $(window).scroll(function(){
+   if ($(this).scrollTop() == 0) {
+     /* Si window scroll top es menor a 50px esconder navigation bar */
+     $("nav").removeClass("cg-top-nav");
+     $("nav li a.smooth-scroll").css('color', 'white');
+   } else {
+     /* Si es mayor, mostrar navigation bar */
+     $("nav").addClass("cg-top-nav");
+     $("nav li a.smooth-scroll").css('color', 'rgb(70,63,64)');
+   }
+   });
+ });
 
 /* Smooth Scrolling*/
 
@@ -108,56 +108,88 @@ $(function() {
 
 
 
-  /*===========================================================================
-                                  SUBRAYADO
-  ===========================================================================*/
 
-// 
-//   // VARIABLES
-// const magicalUnderlines = Array.from(document.querySelectorAll('.underline--magical'));
-//
-// const gradientAPI = 'https://gist.githubusercontent.com/wking-io/3e116c0e5675c8bcad8b5a6dc6ca5344/raw/4e783ce3ad0bcd98811c6531e40256b8feeb8fc8/gradient.json';
-//
-// // HELPER FUNCTIONS
-//
-// // 1. Get random number in range. Used to get random index from array.
-// const randNumInRange = max => Math.floor(Math.random() * (max - 1));
-//
-// // 2. Merge two separate array values at the same index to
-// // be the same value in new array.
-// const mergeArrays = (arrOne, arrTwo) => arrOne
-//   .map((item, i) => `${item} ${arrTwo[i]}`)
-//   .join(', ');
-//
-// // 3. Curried function to add a background to array of elms
-// const addBackground = (elms) => (color) => {
-//   elms.forEach(el => {
-//     el.style.backgroundImage = color;
-//   });
-// }
-// // 4. Function to get data from API
-// const getData = async(url) => {
-//   const response = await fetch(url);
-//   const data = await response.json();
-//   return data.data;
-// }
-//
-// // 5. Partial Application of addBackground to always apply
-// // background to the magicalUnderlines constant
-// const addBackgroundToUnderlines = addBackground(magicalUnderlines);
-//
-// // GRADIENT FUNCTIONS
-//
-// // 1. Build CSS formatted linear-gradient from API data
-// const buildGradient = (obj) => `linear-gradient(${obj.direction}, ${mergeArrays(obj.colors, obj.positions)})`;
-//
-// // 2. Get single gradient from data pulled in array and
-// // apply single gradient to a callback function
-// const applyGradient = async(url, callback) => {
-//   const data = await getData(url);
-//   const gradient = buildGradient(data[randNumInRange(data.length)]);
-//   callback(gradient);
-// }
-//
-// // RESULT
-// applyGradient(gradientAPI, addBackgroundToUnderlines);
+/*===========================================================================
+                                NOSOTROS
+===========================================================================*/
+$(function() {
+  $("#team-members").owlCarousel({
+    items: 3,
+    autoplay: true,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true
+  });
+});
+
+
+
+/*===========================================================================
+                                MAPA
+===========================================================================*/
+
+
+    function initMap() {
+
+
+    	var cgcomercial = {
+    		info: '<div id="map-content"><h5>Oficinas Comerciales</h5><br>\
+    					<strong> Dirección</strong>&nbsp; &nbsp; Pasaje Carabelas 265, CABA.<br>\
+              <strong> Teléfono</strong>&nbsp; &nbsp; +5411 4328-7681<br>\
+    					<a href="https://goo.gl/maps/5t45hvY9WU12">Como llegar</a></div>',
+              lat: -34.6053194,
+          		long: -58.3824277
+    	};
+
+    	var cgfabrica = {
+    		info: '<div id="map-content"><h5>Fábrica</h5><br>\r\
+    					<strong> Dirección</strong>&nbsp; &nbsp; Calle 830 Nº450<br>\
+              <strong> Teléfono</strong>&nbsp; &nbsp; +5411 4250-7666<br>\
+    					<a href="https://goo.gl/maps/M62uakVTKMv">Como llegar</a> </div>',
+        lat: -34.7307274,
+        long: -58.3979491
+    	};
+
+    	var locations = [
+          [cgcomercial.info, cgcomercial.lat, cgcomercial.long, 0],
+          [cgfabrica.info, cgfabrica.lat, cgfabrica.long, 1],
+        ];
+
+    	var map = new google.maps.Map(document.getElementById('map'), {
+    		zoom: 10,
+    		center: new google.maps.LatLng(-34.6973372,-58.4482101),
+    		mapTypeId: google.maps.MapTypeId.ROADMAP
+    	});
+
+    	var infowindow = new google.maps.InfoWindow({});
+
+    	var marker, i;
+
+    	for (i = 0; i < locations.length; i++) {
+    		marker = new google.maps.Marker({
+    			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+    			map: map,
+          icon:'img/logos/CGmark.png'
+    		});
+
+    		google.maps.event.addListener(marker, 'click', (function (marker, i) {
+    			return function () {
+    				infowindow.setContent(locations[i][0]);
+    				infowindow.open(map, marker);
+    			}
+    		})(marker, i));
+    	}
+    }
+
+
+
+    /*===========================================================================
+                                  SIDEBAR (+)
+    ===========================================================================*/
+
+
+    $(function() {
+      $('.plus-minus-toggle').on('click', function() {
+        $(this).toggleClass('collapsed');
+      });
+    });
