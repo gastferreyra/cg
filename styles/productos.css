@@ -32,7 +32,7 @@ p {
 
 #home-cover {
   height: 100%;
-background-image: url(../img/portadas/otra2bis.jpg);
+background-image: url(../img/portadas/otra2bis2.jpg);
   background-repeat: repeat;
   display: flex;
   align-items: stretch;
@@ -378,6 +378,7 @@ header nav ul ul div li {
 header nav ul li:hover > div ul {
   display: block;
   height: 347px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header nav ul li:hover ul li{
@@ -600,6 +601,7 @@ header nav ul li img.img-default{
 #content {
     padding: 20px;
     min-height: 100vh;
+    margin: 0 60px 0 60px;
     transition: all 0.3s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 180px;
@@ -609,8 +611,10 @@ header nav ul li img.img-default{
 #sidebarCollapse {
     width: 40px;
     height: 40px;
-    background: #CCCCCC;
+    background: #f7f7f7;
     margin-top: 180px;
+    margin-left: -30px;
+    border-radius: 25%;
 }
 
 #sidebarCollapse span {
@@ -640,9 +644,13 @@ header nav ul li img.img-default{
     margin: 5px auto;
 }
 
+#sidebarCollapse.active{
+  margin-left: 10px;
+}
+
 
 /*=============================================================================
-                                PRODUCTOS (FOTOS)
+                                PRODUCTOS (Estilo Original)
 ===========================================================================*/
 
 .thumbnail{
@@ -680,43 +688,9 @@ header nav ul li img.img-default{
 
 }
 
-
-
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-        transform: rotateY(90deg);
-    }
-    #sidebar.active {
-        margin-left: 0;
-        transform: none;
-    }
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type {
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
-    }
-    #sidebarCollapse.active span {
-        margin: 0 auto;
-    }
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-
-}
-
+/*=============================================================================
+                                PRODUCTOS (Estilo triangular)
+===========================================================================*/
 
 
 .snip1401 {
@@ -835,4 +809,40 @@ header nav ul li img.img-default{
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(90deg);
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+
 }

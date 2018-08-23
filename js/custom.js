@@ -146,8 +146,8 @@ $(function() {
     					<strong> Dirección</strong>&nbsp; &nbsp; Calle 830 Nº450<br>\
               <strong> Teléfono</strong>&nbsp; &nbsp; +5411 4250-7666<br>\
     					<a href="https://goo.gl/maps/M62uakVTKMv">Como llegar</a> </div>',
-        lat: -34.7307274,
-        long: -58.3979491
+              lat: -34.7307274,
+              long: -58.3979491
     	};
 
     	var locations = [

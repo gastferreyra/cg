@@ -593,6 +593,7 @@ nav ul ul div li {
 nav ul li:hover > div ul {
   display: block;
   height: 347px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav ul li:hover ul li{
@@ -647,6 +648,7 @@ nav ul ul {
   display: inline-block;
   width: 794px;
   left: -311px;
+
 }
 
 nav ul li img {
