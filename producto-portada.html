@@ -20,45 +20,64 @@
 
   <!-- data offset sirve para determinar el tamaño del menú para que el highlight tome esos parametros antes de marcar ubicación-->
 
-  <header>
-
-    <nav class="navbar navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="cg-nav-wrapper">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cg-menu">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#home">
-              <img src="img/logocg1.png" alt="logo" id="logocg">
-            </a>
+    <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <div class="cg-nav-wrapper">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cg-menu">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"href="#home">
+                    <img src="img/logos/logocg1.png" alt="logo" class="logocg1">
+                    <img src="img/logos/logocg3.png" alt="" class="logocg2">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="cg-menu">
+                <ul class="nav navbar-nav">
+                  <li class="li-submenu"> <a class="smooth-scroll" href="#home" class="color1">Home</a></li>
+                  <li class="li-submenu"> <a class="smooth-scroll" href="#about">Nosotros </a></li>
+                  <li class="li-submenu"> <a class="smooth-scroll" href="#work">Obras</a></li>
+                  <li class="li-submenu">
+                    <a class="smooth-scroll" href="#">Productos +</a>
+                    <!-- First Tier Drop Down -->
+                    <div>
+                        <ul>
+                          <li class="li-img">
+                            <a class="a-products" href="#">- REVESTIMIENTOS</a>
+                            <img src="img/trabajoscg/trabajo1.jpg" class="img-1" alt="">
+                          </li>
+                          <li class="li-img">
+                            <a class="a-products" href="#">- FACHADAS</a>
+                            <img src="img/trabajoscg/trabajo5.jpg" class="img-2" alt="">
+                          </li>
+                          <li class="li-img">
+                            <a class="a-products" href="#">- CONTROL SOLAR</a>
+                            <img src="img/trabajoscg/trabajo3.jpg" class="img-3" alt="">
+                          </li>
+                          <li class="li-img">
+                            <a class="a-products" href="#">- CIELORRASOS</a>
+                            <img src="img/trabajoscg/trabajo4.jpg" class="img-4" alt="">
+                          </li>
+                        </ul>
+                        <img src="img/trabajoscg/trabajo7.jpg" class="img-default" alt="">
+                    </div>
+                  </li>
+                  <li class="li-submenu"><a class="smooth-scroll" href="#novedades">Novedades</a></li>
+                  <li class="li-submenu"><a class="smooth-scroll" href="#sponsors">Clientes</a></li>
+                  <li class="li-submenu"><a class="smooth-scroll" href="#contact">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-          <div class="collapse navbar-collapse" id="cg-menu">
-            <ul class="nav navbar-nav">
-
-              <li> <a class="smooth-scroll linea" href="#home" class="color1">Home</a> </li>
-              <li> <a class="smooth-scroll linea" href="#services">Nosotros </a></li>
-              <li> <a class="smooth-scroll linea" href="#about">Obras</a></li>
-              <li class="dropdown"> <a class="smooth-scroll dropdown-toggle linea" onclick="openNav()">Productos</a></li>
-              <li> <a class="smooth-scroll linea" href="#team">Novedades</a></li>
-              <li> <a class="smooth-scroll linea" href="#clientes">Clientes</a></li>
-              <li> <a class="smooth-scroll linea" href="#contact">Contacto</a></li>
-
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
 
 
-  </header>
+
+    </header>
 
 
 
@@ -106,9 +125,10 @@
 
             <ul class="list-unstyled CTAs">
               <li><a href="#" class="download">Descargar Inventario</a></li>
-              <li><a href="#" class="article">Volver al Home</a></li>
+              <li><a href="index.html" class="article">Volver al Home</a></li>
             </ul>
           </nav>
+
 
           <div class="navbar-header">
             <button type="button" id="sidebarCollapse" class="navbar-btn">
@@ -128,22 +148,144 @@
 
               <div class="row">
 
-                <div class="col-md-12">
-                      <img class="producto-portada"src="img/diagonal.jpg" alt="Lights">
-                      <div class="producto-portada-titulo">
-                        <h3 class="producto-title">Hunter Douglas Mesh</h3>
-                        <p class="producto"></p>
-                      </div>
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/otro.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Aluminio</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+
+
+
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/diagonal.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Skinwall</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/acusticos.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Maderas Tecno.</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
                 </div>
               </div>
 
 
 
+              <div class="row">
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/portada.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Cementicios</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/otro.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Acústicos</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/diagonal.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Translúcidos</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+              </div>
 
 
 
 
+              <div class="row">
 
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/acusticos.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Eleanor Fant</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/portada.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Eleanor Fant</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+
+                <div class="col-md-4">
+                  <figure class="snip1401">
+                    <img src="img/productos/otro.jpg" alt="sample67" />
+                    <figcaption>
+                      <h3>Eleanor Fant</h3>
+                      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    </figcaption><i class="fas fa-arrow-circle-right"></i>
+
+                    <a href="#"></a>
+                  </figure>
+                </div>
+
+              </div>
+
+
+
+
+              <div class="row">
+
+                <div class="portada-producto">
+                  <img src="img/productos/trabajo8" alt="" class="portada-producto-foto">
+                </div>
+              </div>
 
 
 
@@ -160,9 +302,8 @@
 
 
 
-
-
   <!-- CONTACTO -->
+
 
   <footer id="contact">
 
@@ -172,19 +313,25 @@
 
         <div class="col-md-6">
           <div id="contact-left">
-            <h3>cg</h3>
-            <p>Somos lideres en materiales arquitectónicos <strong>Ayudamos a innovar.</strong>. </p>
+              <img src="img/logos/logocg4.png" alt="" id="cg-footer-title">
+              <p>Somos lideres en materiales arquitectónicos. <strong>Ayudamos a innovar.</strong>.  </p>
 
-            <div id="contact-info">
-              <address>
-                <strong>Nuestro espacio.</strong>
-                <p>Pasaje Carabelas 267. <br>
-                  Ciudad Autónoma de Buenos Aires, Argentina </p>
+              <div id="contact-info">
+                <address>
+                  <strong>Showroom de ventas.</strong>
+                  <p>Pje. Carabelas 265 (1009) <br>C.A.B.A. l Bs. As. l Argentina </p>
+                </address>
+                <address>
+                  <strong>Fábrica.</strong>
+                  <p>Calle 830 Nº450 (1881) <br> Quilmes O. l Bs. As. l  </p>
                 </address>
                 <div class="phone-email">
                   <p>
-                    <strong>Telefono</strong> <span>(011) 4-393-3514</span>
-                    <strong>Email</strong> <span>info@cg.com</span>
+                      <strong>Teléfonos</strong> <br>
+                      <span>+5411 4328-7681 / 4543 / 3558 l <strong>Ventas</strong></span> <br>
+                      <span>+5411 4250-7666l <strong>Fábrica</strong> </span> <br>
+                      <strong>Email</strong> <br>
+                       <span>info@cg-sa.com</span>
                   </p>
                 </div>
 
@@ -198,23 +345,25 @@
                 <li> <a href="#" class="social-icon icon-white"> <i class="fab fa-youtube"></i> </a> </li>
               </ul>
 
-            </div>
           </div>
 
-          <div class="col-md-6">
-            <div id="contact-right">
+        </div>
+
+        <div class="col-md-6">
+          <div id="contact-right">
               <h3>Contactanos.</h3>
 
               <form class="form" action="#" method="post">
-                <input type="text" name="nombre completo" placeholder="Nombre y Apellido" value="" class="form-control">
-                <input type="text" name="email" placeholder="Email" value="" class="form-control">
-                <textarea rows="5" name="mensaje" placeholder="Mensaje" class="form-control"></textarea>
-                <div id="send-btn">
-                  <a href="#" class="btn btn-lg btn-general btn-white" role="button">Enviar</a>
+                  <input type="text" name="nombre completo" placeholder="Nombre y Apellido"value="" class="form-control">
+                  <input type="text" name="email" placeholder="Email"value="" class="form-control">
+                  <textarea rows="5" name="mensaje" placeholder="Mensaje" class="form-control"></textarea>
+                  <div id="send-btn">
+                    <a href="#" class="btn btn-lg btn-general btn-white" role="button">Enviar</a>
 
-                </div>
+                  </div>
               </form>
             </div>
+
           </div>
 
         </div>
@@ -222,7 +371,36 @@
       </div>
 
 
-    </footer>
+    </div>
+
+  <!-- div#footer-bottom>div.container>div.row>div.col-md-6{copyrights}+div.col-md-6{footer-menu}  CREADO CON EMMET-->
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="footer-copyrights">
+            <p>Copyrights &copy; 2018 Desarrollo SSPV</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="footer-menu">
+            <ul>
+              <li><a href="#home">Home</a>/</li>
+              <li><a href="#nosotros">Nosotros</a>/</li>
+              <li><a href="#novedades">Novedades</a>/</li>
+              <li><a href="#obras">Obras</a>/</li>
+              <li><a href="#clientes">Clientes</a>/</li>
+              <li><a href="#contacto">Conctacto</a>/</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </footer>
+
 
 
     <script src="js/jquery.js"></script>

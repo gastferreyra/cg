@@ -73,18 +73,38 @@ $(function() {
 });
 
 /*===========================================================================
+                                Novedades
+===========================================================================*/
+$(function() {
+  $("#novedades-list").owlCarousel({
+    items: 3,
+    autoplay: true,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true
+  });
+});
+
+
+/*===========================================================================
                                 NAVIGATION
 ===========================================================================*/
 $(function() {
  $(window).scroll(function(){
-   if ($(this).scrollTop() == 0) {
+   if ($(this).scrollTop() <50 ) {
      /* Si window scroll top es menor a 50px esconder navigation bar */
      $("nav").removeClass("cg-top-nav");
      $("nav li a.smooth-scroll").css('color', 'white');
+     $("img.logocg1").css('opacity', '1');
+     $("img.logocg2").css('opacity', '0');
+     $("#back-to-top").fadeOut();
    } else {
      /* Si es mayor, mostrar navigation bar */
      $("nav").addClass("cg-top-nav");
      $("nav li a.smooth-scroll").css('color', 'rgb(70,63,64)');
+     $("img.logocg1").css('opacity', '0');
+     $("img.logocg2").css('opacity', '1');
+     $("#back-to-top").fadeIn();
    }
    });
  });

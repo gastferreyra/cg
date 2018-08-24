@@ -181,53 +181,7 @@ background-image: url(../img/portadas/otra2bis2.jpg);
 
 
 
-/*=============================================================================
-                                  CONTACTO
-===========================================================================*/
 
-footer{
-  background-color: #41464b;
-  padding-top: 30px;
-  border-top: 5px solid rgba(0,0,0,0.1);
-  padding-bottom: 10px;
-}
-
-#contact-left h3, #contact-right h3{
-  color: #fff;
-  font-size: 27px;
-  font-weight: 700;
-}
-
-#contact-left p{
-  color: #fff;
-  margin-bottom: 30px;
-}
-
-address{
-  color: #fff;
-}
-
-address strong, #phone-email strong{
-  letter-spacing: 1px;
-}
-
-form .form-control{
-  background: transparent;
-  border-radius: 0;
-  border-color: #fff;
-  font-size: 17px;
-  font-weight: 300;
-  padding: 8px 16px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-
-
-
-/*=============================================================================
-                                  NAVIGATION
-===========================================================================*/
 
 
 
@@ -250,6 +204,7 @@ form .form-control{
 .cg-top-nav{
   background: rgb(255, 254, 254);
   padding: 7px 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cg-nav-wrapper{
@@ -478,11 +433,18 @@ header nav ul li img.img-default{
                                 LOGOCG
 ===========================================================================*/
 
-#logocg{
+.img.logocg1{
   width: 100%;
   margin-top: -15px;
 }
 
+.logocg2 {
+  opacity: 0;
+  width: 30%;
+  position: relative;
+  top: -70px;
+  margin-left: 50px;
+}
 
 
 
@@ -506,7 +468,7 @@ header nav ul li img.img-default{
 }
 
 #sidebar a{
-  color: white;
+  color: #fff;
   font-size: 25px;
   font-weight: 700;
 }
@@ -543,13 +505,17 @@ header nav ul li img.img-default{
     display: block;
 }
 #sidebar ul li a:hover {
-    color: rgb(125, 125, 121);
+    color: #333333;
     background: #fff;
+}
+
+#sidebar ul li a:hover i{
+  color: #333333;
 
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: rgb(125, 125, 121);
+    color: #333333;
     background: rgb(125, 125, 121);
 }
 
@@ -561,6 +527,7 @@ header nav ul li img.img-default{
 
 #sidebar i{
   margin-left: 100px;
+  color: #ffffff;
 }
 
 
@@ -569,7 +536,7 @@ header nav ul li img.img-default{
 #sidebar ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #fafafa;
+    background: #c2bfbf;
     color: #41464B;
 }
 
@@ -589,9 +556,11 @@ header nav ul li img.img-default{
     background: #41464B;
 }
 
+
 #sidebar a.article, a.article:hover {
-    color: #fff !important;
+    color: #d1cc58 !important;
 }
+
 
 
 
@@ -606,6 +575,7 @@ header nav ul li img.img-default{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 180px;
     margin-right: 40px;
+
 }
 
 #sidebarCollapse {
@@ -770,7 +740,7 @@ header nav ul li img.img-default{
   margin: 0 0 5px;
   line-height: 1.1em;
   font-weight: 900;
-  font-size: 1.4em;
+  font-size: .9em;
   opacity: 0.75;
 }
 .snip1401 p {
@@ -780,7 +750,7 @@ header nav ul li img.img-default{
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 20px 30px;
+  padding: 20px 10px;
   font-size: 25px;
   color: #ffffff;
   opacity: 0;
@@ -810,6 +780,105 @@ header nav ul li img.img-default{
   transform: translateX(0);
   opacity: 1;
 }
+
+
+/*=============================================================================
+                                  CONTACTO
+===========================================================================*/
+
+footer{
+  background-color: #41464b;
+  padding-top: 30px;
+  border-top: 5px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+#contact-left h3, #contact-right h3{
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#contact-left p{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+address{
+  color: #fff;
+}
+
+address strong, #phone-email strong{
+  letter-spacing: 1px;
+}
+
+form .form-control{
+  background: transparent;
+  border-radius: 0;
+  border-color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+
+
+/*=============================================================================
+                                  FOOTER
+===========================================================================*/
+
+#footer-bottom{
+  background-color: #bdb555;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+#footer-copyrights p{
+  margin:0;
+  color: #fff;
+}
+
+#footer-menu{
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#footer-menu ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#footer-menu ul li{
+  display: inline-block;
+}
+
+#footer-menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#footer-menu a:hover{
+  color:rgb(51, 51, 51);
+}
+
+#cg-footer-title{
+  width: 12%;
+  margin-bottom: 10px;
+}
+
+
+
+
 
 
 

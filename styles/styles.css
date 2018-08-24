@@ -19,6 +19,8 @@ p {
   color: #64707b;
   font-size: 16px;
   font-weight: 300;
+  text-align: justify !important;
+
 }
 
 /*=============================================================================
@@ -61,7 +63,7 @@ p {
 ===========================================================================*/
 
 .underline--magical {
-  background-image: linear-gradient(120deg, rgb(209, 212, 70) 0%, #707270 100%);
+  background-image: linear-gradient(120deg, rgb(232, 222, 88) 0%, #707270 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -129,13 +131,23 @@ p {
 }
 
 .btn-blue {
-  border-color: rgb(209, 212, 70);
+  border-color: rgb(232, 222, 88);
   color: #707270;
 }
 
 .btn-blue:hover, .btn-blue:focus {
-  background-color: rgb(209, 212, 70);
+  background-color: rgb(232, 222, 88);
   color: #fff;
+}
+
+.btn-back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 22px;
+  padding: 3px 15px;
+  border-radius: 0;
+  display: none;
 }
 
 /*=============================================================================
@@ -157,7 +169,7 @@ p {
 .content-title-underline {
   width: 30px;
   height: 3px;
-  background-color: rgb(209, 212, 70);
+  background-color: rgb(232, 222, 88);
   margin: 0 auto 0 auto;
   margin-bottom: 30px;
 }
@@ -186,7 +198,7 @@ p {
 
 .service-item:hover .iconos {
   /*Si fuese un icon, cambiando el color de la font y el background se crea un buen efecto */
-  background-color: rgb(209, 212, 70);
+  background-color: rgb(232, 222, 88);
 }
 
 .service-item-title h3 {
@@ -242,6 +254,35 @@ p {
   margin-bottom: 30px;
 }
 
+
+/*=============================================================================
+                                  NOVEDADES
+===========================================================================*/
+
+.novedad{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0 10px 4px 10px;
+
+}
+
+#novedades-list{
+margin-bottom: 20px;
+}
+
+.novedad h3{
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.novedad p{
+  font-size: 14px;
+  text-align: justify;
+}
+
 /*=============================================================================
                                   TRABAJOS
 ===========================================================================*/
@@ -288,7 +329,7 @@ h4.team-member-name {
 }
 
 h4.team-member-designation {
-  color: rgb(209, 212, 70);
+  color: rgb(232, 222, 88);
   font-size: 15px;
   font-weight: 700;
   font-style: italic;
@@ -322,7 +363,7 @@ h4.team-member-designation {
 }
 
 .social-icon i:hover {
-  color: rgb(209, 212, 70);
+  color: rgb(232, 222, 88);
 }
 
 .icon-white i{
@@ -403,48 +444,6 @@ h4.team-member-designation {
 }
 
 
-/*=============================================================================
-                                  CONTACTO
-===========================================================================*/
-
-footer{
-  background-color: #41464b;
-  padding-top: 30px;
-  border-top: 5px solid rgba(0,0,0,0.1);
-  padding-bottom: 10px;
-}
-
-#contact-left h3, #contact-right h3{
-  color: #fff;
-  font-size: 27px;
-  font-weight: 700;
-}
-
-#contact-left p{
-  color: #fff;
-  margin-bottom: 30px;
-}
-
-address{
-  color: #fff;
-}
-
-address strong, #phone-email strong{
-  letter-spacing: 1px;
-}
-
-form .form-control{
-  background: transparent;
-  border-radius: 0;
-  border-color: #fff;
-  font-size: 17px;
-  font-weight: 300;
-  padding: 8px 16px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-
 
 
 /*=============================================================================
@@ -465,6 +464,7 @@ form .form-control{
 .cg-top-nav{
   background: rgb(255, 254, 254);
   padding: 7px 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cg-nav-wrapper{
@@ -504,8 +504,9 @@ form .form-control{
   color: #ffe806;
 }
 
-/*Prod-submenu*/
-
+/*=============================================================================
+                                  PROD SUBMENU
+===========================================================================*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
@@ -627,7 +628,7 @@ position: relative;
 padding-bottom: 13px;
 margin-left: 29px;
 bottom: -27px;
-border-left: 4px solid #fff173;
+border-left: 4px solid rgb(232, 222, 88);
 }
 
 nav ul li div {
@@ -680,6 +681,7 @@ nav ul li img.img-default{
   z-index: 1;
 }
 
+
 .li-img img{
   transition: opacity .5s ease-in-out;
   opacity: 0;
@@ -694,15 +696,18 @@ nav ul li img.img-default{
                                 LOGOCG
 ===========================================================================*/
 
-#logocg{
+.img.logocg1{
   width: 100%;
   margin-top: -15px;
 }
 
-#logo-heading-cg{
-  width: 7%;
+.logocg2 {
+  opacity: 0;
+  width: 30%;
+  position: relative;
+  top: -70px;
+  margin-left: 50px;
 }
-
 
 
 /*=============================================================================
@@ -737,13 +742,16 @@ nav ul li img.img-default{
 }
 
 
+/*=============================================================================
+                                FLECHA PORTADA
+===========================================================================*/
 
 
 
 .arrow {
   opacity: 0;
   position: absolute;
-  left: 50%;
+  left: 49%;
   top: 80%;
   transform-origin: 50% 50%;
   transform: translate3d(-50%, -50%, 0);
@@ -783,4 +791,99 @@ nav ul li img.img-default{
   100% {
     opacity: 0;
   }
+}
+
+
+/*=============================================================================
+                                  CONTACTO
+===========================================================================*/
+
+footer{
+  background-color: #41464b;
+  padding-top: 30px;
+  border-top: 5px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+#contact-left h3, #contact-right h3{
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#contact-left p{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+address{
+  color: #fff;
+}
+
+address strong, #phone-email strong{
+  letter-spacing: 1px;
+}
+
+form .form-control{
+  background: transparent;
+  border-radius: 0;
+  border-color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+
+
+/*=============================================================================
+                                  FOOTER
+===========================================================================*/
+
+#footer-bottom{
+  background-color: #bdb555;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+#footer-copyrights p{
+  margin:0;
+  color: #fff;
+}
+
+#footer-menu{
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#footer-menu ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#footer-menu ul li{
+  display: inline-block;
+}
+
+#footer-menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#footer-menu a:hover{
+  color:rgb(51, 51, 51);
+}
+
+#cg-footer-title{
+  width: 12%;
+  margin-bottom: 10px;
 }
