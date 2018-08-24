@@ -656,7 +656,7 @@ nav ul ul {
 nav ul li img {
   width: 500px;
   height: 300px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   right: -581px;
   top: -2px;
@@ -678,7 +678,7 @@ nav ul li img.img-4 {
 nav ul li img.img-default{
   top: 67px;
   left: -31px;
-  opacity: 1;
+
   z-index: 1;
 }
 
