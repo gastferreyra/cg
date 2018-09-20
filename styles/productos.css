@@ -43,7 +43,7 @@ background-image: url(../img/portadas/otra2bis2.jpg);
   width: 100%;
   height: 100%;
   display: table;
-} */
+}
 
 
 #home-content-box-inner {
@@ -186,6 +186,37 @@ background-image: url(../img/portadas/otra2bis2.jpg);
 
 
 
+
+/*=============================================================================
+                                  CSS GENERAL
+===========================================================================*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #41464B;
+}
+
+p {
+  color: #64707b;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify !important;
+}
+
+
+
+
+
+
+
 /*=============================================================================
                                   NAVIGATION
 ===========================================================================*/
@@ -207,50 +238,51 @@ background-image: url(../img/portadas/otra2bis2.jpg);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.cg-nav-wrapper{
+header .cg-nav-wrapper{
   padding: 0 85px;
 }
 
-.navbar-nav{
+header .navbar-nav{
   float: right;
 }
 
-.navbar-nav > li > a{
+header .navbar-nav > li > a{
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+header.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
   background: none;
 }
 
-.navbar-toggle{
+header .navbar-toggle{
   background-color: rgba(0,0,0,0.1);
   border: 1px solid #fff;
   border-radius: 0;
 }
 
-.navbar-toggle .icon-bar{
+header .navbar-toggle .icon-bar{
   background-color: #fff;
 }
 
-.navbar-collapse{
+header .navbar-collapse{
   max-height: none !important;
 }
 
-.cg-top-nav ul.navbar-nav > li.active > a{
+header .cg-top-nav ul.navbar-nav > li.active > a{
   color: #ffe806;
 }
 
-/*Prod-submenu*/
-
+/*=============================================================================
+                                  PROD SUBMENU
+===========================================================================*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
-h1 {
+header h1 {
 	font-size: 60px;
 	text-align: center;
 	color: #FFF;
@@ -275,7 +307,7 @@ header h1 {
 	font-size:60px;
 	}
 
-#container {
+header #container {
 	margin: 0 auto;
 }
 
@@ -367,7 +399,7 @@ position: relative;
 padding-bottom: 13px;
 margin-left: 29px;
 bottom: -27px;
-border-left: 4px solid #fff173;
+border-left: 4px solid rgb(232, 222, 88);
 }
 
 header nav ul li div {
@@ -388,6 +420,7 @@ header nav ul ul {
   display: inline-block;
   width: 794px;
   left: -311px;
+
 }
 
 header nav ul li img {
@@ -415,37 +448,41 @@ header nav ul li img.img-4 {
 header nav ul li img.img-default{
   top: 67px;
   left: -31px;
-  opacity: 1;
+
   z-index: 1;
 }
 
-.li-img img{
+
+header .li-img img{
   transition: opacity .5s ease-in-out;
   opacity: 0;
 }
 
-.li-img:hover img {
+header .li-img:hover img {
   opacity: 1;
   z-index: 999;
 }
+
+
 
 /*=============================================================================
                                 LOGOCG
 ===========================================================================*/
 
-.img.logocg1{
-  width: 100%;
+
+
+img.logocg1{
+  width: 90%;
   margin-top: -15px;
+
 }
 
-.logocg2 {
+img.logocg2 {
   opacity: 0;
-  width: 30%;
+  width: 90%;
+  margin-top: -72px;
   position: relative;
-  top: -70px;
-  margin-left: 50px;
 }
-
 
 
 /* ---------------------------------------------------
@@ -464,7 +501,9 @@ header nav ul li img.img-default{
     background-color: #333333;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 180px;
-
+    margin-right: 0;
+    margin-left: 60px;
+    z-index: 10;
 }
 
 #sidebar a{
@@ -574,49 +613,10 @@ header nav ul li img.img-default{
     transition: all 0.3s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 180px;
-    margin-right: 40px;
+    margin-left: 0;
 
 }
 
-#sidebarCollapse {
-    width: 40px;
-    height: 40px;
-    background: #f7f7f7;
-    margin-top: 180px;
-    margin-left: -30px;
-    border-radius: 25%;
-}
-
-#sidebarCollapse span {
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #555;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-    transition-delay: 0.2s;
-}
-
-#sidebarCollapse span:first-of-type {
-    transform: rotate(45deg) translate(2px, 2px);
-}
-#sidebarCollapse span:nth-of-type(2) {
-    opacity: 0;
-}
-#sidebarCollapse span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-
-#sidebarCollapse.active span {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
-}
-
-#sidebarCollapse.active{
-  margin-left: 10px;
-}
 
 
 /*=============================================================================
@@ -696,7 +696,7 @@ header nav ul li img.img-default{
   z-index: 1;
   opacity: 1;
   padding: 30px 0 30px 10px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
@@ -712,7 +712,7 @@ header nav ul li img.img-default{
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent #ffffff transparent transparent;
+  border-color: transparent rgba(255, 255, 255, 0.7) transparent transparent;
 }
 .snip1401:after {
   position: absolute;
@@ -732,16 +732,19 @@ header nav ul li img.img-default{
 .snip1401 h3,
 .snip1401 p {
   line-height: 1.5em;
-  -webkit-transform: translateX(-30px);
-  transform: translateX(-30px);
+  -webkit-transform: translateX(-45px);
+  transform: translateX(-45px);
   margin: 0;
 }
 .snip1401 h3 {
-  margin: 0 0 5px;
+  font-family:
+  margin: 0 0 0px;
   line-height: 1.1em;
   font-weight: 900;
-  font-size: .9em;
+  font-size: 1.2em;
   opacity: 0.75;
+  color: #222222;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .snip1401 p {
   font-size: 0.8em;
@@ -780,6 +783,40 @@ header nav ul li img.img-default{
   transform: translateX(0);
   opacity: 1;
 }
+
+/*=============================================================================
+                                  SOCIAL
+===========================================================================*/
+
+.social-list {
+  padding-left: 0;
+}
+
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.social-icon i {
+  font-size: 17px;
+}
+
+.icon-gray i {
+  color: #64707b;
+}
+
+.social-icon i:hover {
+  color: rgb(232, 222, 88);
+}
+
+.icon-white i{
+  color: #fff;
+}
+
 
 
 /*=============================================================================
@@ -822,7 +859,6 @@ form .form-control{
   margin-bottom: 20px;
   color: #fff;
 }
-
 
 
 
@@ -874,44 +910,4 @@ form .form-control{
 #cg-footer-title{
   width: 12%;
   margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-        transform: rotateY(90deg);
-    }
-    #sidebar.active {
-        margin-left: 0;
-        transform: none;
-    }
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type {
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
-    }
-    #sidebarCollapse.active span {
-        margin: 0 auto;
-    }
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-
 }

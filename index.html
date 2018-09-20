@@ -1,12 +1,17 @@
+<?php
+require('send_form-email.php');
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CGSA</title>
+  <title>CGSA - Nosotros</title>
   <link rel="shortcut icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="styles/animate/animate.css">
@@ -21,6 +26,7 @@
 
 <body data-spy="scroll" data-target".navbar-fixed-top" data-offset='65'>  <!-- data offset sirve para determinar el tamaño del menú para que el highlight tome esos parametros antes de marcar ubicación-->
 
+<!-- <div class="se-pre-con"></div> -->
 
   <header>
       <nav class="navbar navbar-fixed-top" role="navigation">
@@ -34,8 +40,8 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand"href="#home">
-                  <img src="img/logos/logocg1.png" alt="logo" class="logocg1">
-                  <img src="img/logos/logocg3.png" alt="" class="logocg2">
+                  <img src="img/logos/logocg1.svg" alt="logo" class="logocg1">
+                  <img src="img/logos/logocg4.svg" alt="logo" class="logocg2">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="cg-menu">
@@ -44,12 +50,12 @@
                 <li class="li-submenu"> <a class="smooth-scroll" href="#about">Nosotros </a></li>
                 <li class="li-submenu"><a class="smooth-scroll" href="#novedades">Novedades</a></li>
                 <li class="li-submenu">
-                  <a class="smooth-scroll" href="producto2.html">Productos +</a>
+                  <a class="smooth-scroll" href="producto2.html">Productos</a>
                   <!-- First Tier Drop Down -->
                   <div>
                       <ul>
                         <li class="li-img">
-                          <a class="a-products" href="producto2.html">- REVESTIMIENTOS</a>
+                          <a class="a-products" href="revestimientos.html">- REVESTIMIENTOS</a>
                           <img src="img/trabajoscg/trabajo6.jpg" class="img-1" alt="">
                         </li>
                         <li class="li-img">
@@ -90,10 +96,10 @@
         <div id="home-content-box-inner" class="text-center">
           <div id="home-heading" class="animated zoomIn">
             <!-- <img id="logo-heading-cg" class=" wow animated zoomIn"src="img/logocg4.png" alt=""> -->
-            <h3>CG S.A. <br> Somos <span class="underline--magical">innovación arquitectónica</span>. </h3>
+            <h3>CG S.A. <br>  <span class="underline--magical">innovación arquitectónica</span>. </h3>
           </div>
           <div id="home-btn" class="animated zoomIn">
-            <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#sumate" role="button" title="sumarte">Saber Más</a>
+            <a class="btn btn-lg btn-general btn-white smooth-scroll" href="nosotros.html" role="button" title="sumarte">Saber Más</a>
           </div>
           <div class="arrow arrow-first"></div>
           <div class="arrow arrow-second"></div>
@@ -122,12 +128,12 @@
                   <div class="content-title-underline"></div>
                 </div>
                 <div id="about-description" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                  <p>Somos una empresa argentina con más de 30 años de actividad ininterrumpida en el mercado de la construcción. A través de los años, con un esfuerzo coordinado, <b>innovaciones tecnológicas</b> de punta, y una coherente dirección empresarial, ha logrado llevar a cabo obras de gran envergadura tanto del sector público como privado.
+                  <p>Somos una empresa argentina con más de 30 años de actividad ininterrumpida en el mercado de la construcción. A través de los años, con un esfuerzo coordinado, innovaciones tecnológicas de punta, y una coherente dirección empresarial, ha logrado llevar a cabo obras de gran envergadura tanto del sector público como privado.
                   Con esta suma de condiciones y un amplio stock de materiales, buscamos cubrir todas y cada una de las necesidades de sus clientes. Ofreciendo siempre la mejor respuesta a los más difíciles requerimientos, tanto en el ámbito nacional como en el exterior.</p>
                 </div>
 
                 <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                  <a class="btn btn-lg btn-general btn-blue smooth-scroll " href="#historia">Nuestra Historia</a>
+                  <a class="btn btn-lg btn-general btn-blue smooth-scroll " href="nosotros.html">Saber Mas</a>
 
                 </div>
 
@@ -150,7 +156,7 @@
     <!-- NOVEDADES-->
 
   <section id="novedades">
-    <div class="content-box">
+    <div class="content-box" id="content-color">
       <div class=content-title content-title-white wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s"">
         <h3>NOVEDADES.</h3>
         <div class="content-title-underline"></div>
@@ -161,29 +167,29 @@
           <div class="col-md-12">
             <div id="novedades-list" class="owl-carousel owl-theme">
               <div class="novedad">
-                <img src="img/novedades/novedad.jpg" alt="novedad" class="img-responsive">
-                <h3>Novedad</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <img src="img/novedades/novedad5.jpg" alt="novedad" class="img-responsive">
+                <h3> <span class="underline--magical">Regional Meeting Latinoamerica</span></h3>
+                <p>El 27 de marzo, CG y FUNDERMAX invitan a los matriculados del Consejo Profesional de Arquitectura y Urbanismo (CPAU), a participar de la conferencia Lo Nuevo y lo Viejo, sobre las fachadas innovadoras en Latinoamérica. </p>
               </div>
-              <div class="novedad">
-                <img src="img/novedades/novedad1.jpg" alt="novedad" class="img-responsive">
-                <h3>Novedad</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <div class="novedad" id="myBtn">
+                <img src="img/novedades/novedad6.jpg" alt="novedad" class="img-responsive">
+                <h3><span class="underline--magical">El desafío acustico del Teatro del Bicentenario</span></h3>
+                <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. La obra elegida para esa función especial fue Carmina Burana, interpretada por La Fura dels Baus. </p>
               </div>
-              <div class="novedad">
-                <img src="img/novedades/novedad2.jpg" alt="novedad" class="img-responsive">
-                <h3>Novedad</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="novedad" id="myBtn">
+                <img src="img/novedades/novedad8.jpg" alt="novedad" class="img-responsive">
+                <h3><span class="underline--magical">Creatividad para viviendas únicas</span></h3>
+                <p>La vivienda Flor de Lis ubicada en el Golf Pinamar, se destaca por su identidad moderna y distintiva. Los paneles metálicos de SCREENDOT fueron decisivos para lograr ese perfil.</p>
               </div>
-              <div class="novedad">
-                <img src="img/novedades/novedad3.jpg" alt="novedad" class="img-responsive">
-                <h3>Novedad</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="novedad" id="myBtn">
+                <img src="img/novedades/novedad7.jpg" alt="novedad" class="img-responsive">
+                <h3><span class="underline--magical">Arquitectura sustentable</span></h3>
+                <p>La aplicación de materiales y diseño de conciencia ambiental en obras de distintas escalas y usos es moneda corriente. Claves para atender esta exigencia del mercado.</p>
               </div>
-              <div class="novedad">
-                <img src="img/novedades/novedad4.jpg" alt="novedad" class="img-responsive">
-                <h3>Novedad</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="novedad" id="myBtn">
+                <img src="img/novedades/novedad9.jpg" alt="novedad" class="img-responsive">
+                <h3><span class="underline--magical">DOT BAIRES, 10 años de innovación</span></h3>
+                <p>Casi 10 años después de la construcción del DOT BAIRES, se sigue apreciando la integridad y resistencia de los paneles SWISSPEARL y ALPOLIC.</p>
               </div>
             </div>
           </div>
@@ -195,8 +201,23 @@
     </div>
   </section>
 
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="img/novedades/fondo.svg" alt="">
+    <h3 >El desafío acustico del Teatro del Bicentenario</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
 
-  <!-- TRABAJOS-->
+</div>
+
+
+
+  <!-- OBRAS-->
 
   <section id="work">
 
@@ -241,7 +262,7 @@
           </a>
             </div>
           </div>
-
+      <!-- NO ES NECESARIO AGREGAR OTRA ROW, AUTOMATICAMENTE AL NO ENTRAR EN LAS 12 COL, LAS AGREGA ABAJO. -->
           <div class="col-md-3">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo5.jpg" title="Trilenium Casino">
@@ -250,7 +271,7 @@
             </div>
           </div>
 
-          <!-- NO ES NECESARIO AGREGAR OTRA ROW, AUTOMATICAMENTE AL NO ENTRAR EN LAS 12 COL, LAS AGREGA ABAJO. -->
+
 
           <div class="col-md-3">
             <div class="img-wrapper">
@@ -276,11 +297,20 @@
             </div>
           </div>
 
+
+
         </div>
+
 
       </div>
     </div>
   </section>
+
+  <div id="obras-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#historia">Ver más Obras</a>
+  </div>
+
+
 
 
 
@@ -341,8 +371,8 @@
 
       <div class="col-md-6">
         <div id="contact-left">
-            <img src="img/logos/logocg4.png" alt="" id="cg-footer-title">
-            <p>Somos lideres en materiales arquitectónicos. <strong>Ayudamos a innovar.</strong>.  </p>
+            <img src="img/logos/logocg4.png" alt="" id="cg-footer-title"> <br><br>
+            <p>Somos lideres en materiales arquitectónicos. <strong>Innovamos.</strong>  </p>
 
             <div id="contact-info">
               <address>
@@ -356,7 +386,7 @@
               <div class="phone-email">
                 <p>
                     <strong>Teléfonos</strong> <br>
-                    <span>+5411 4328-7681 / 4543 / 3558 l <i>Ventas</i></span> <br>
+                    <span>+5411 4328-7681 / 4543 / 3558 l <i>Ventas</i></span>
                     <span>+5411 4250-7666 l <i>Fábrica</i> </span> <br><br>
                     <strong>Email</strong> <br>
                      <span>info@cg-sa.com</span>
@@ -378,23 +408,23 @@
       </div>
 
       <div class="col-md-6">
-        <div id="contact-right">
-            <h3>Contactanos.</h3>
+          <div id="contact-right">
+              <h3>Contactanos.</h3>
 
-            <form class="form" action="#" method="post">
-                <input type="text" name="nombre completo" placeholder="Nombre y Apellido"value="" class="form-control">
-                <input type="text" name="email" placeholder="Email"value="" class="form-control">
-                <textarea rows="5" name="mensaje" placeholder="Mensaje" class="form-control"></textarea>
-                <div id="send-btn">
-                  <a href="#" class="btn btn-lg btn-general btn-white" role="button">Enviar</a>
+              <form class="form" action="send_form_email.php" method="post" name="contactform">
+                  <input type="text" name="first_name" placeholder="Nombre"value="" class="form-control">
+                  <input type="text" name="last_name" placeholder="Apellido" value="" class="form-control">
+                  <input type="text" name="telephone" placeholder="Teléfono" value="" class="form-control">
+                  <input type="email" name="email" placeholder="Email"value="" class="form-control">
 
-                </div>
-            </form>
+                  <textarea rows="5" name="comments" placeholder="Mensaje" class="form-control"></textarea>
+                  <div id="send-btn">
+                    <button type="submit" class="btn btn-lg btn-general btn-white" role="button">Enviar</button>
+                  </div>
+              </form>
+            </div>
           </div>
-
         </div>
-
-      </div>
 
     </div>
 
