@@ -1,15 +1,12 @@
-<?php
-require('send_form-email.php');
-?>
 
-<!DOCTYPE html>
+
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CGSA - Nosotros</title>
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>CGSA - Innovación Arquitectónica</title>
+  <link rel="shortcut icon" href="img/logos/logocg.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -26,7 +23,9 @@ require('send_form-email.php');
 
 <body data-spy="scroll" data-target".navbar-fixed-top" data-offset='65'>  <!-- data offset sirve para determinar el tamaño del menú para que el highlight tome esos parametros antes de marcar ubicación-->
 
-<!-- <div class="se-pre-con"></div> -->
+    <div id="loader"></div>
+
+
 
   <header>
       <nav class="navbar navbar-fixed-top" role="navigation">
@@ -50,28 +49,28 @@ require('send_form-email.php');
                 <li class="li-submenu"> <a class="smooth-scroll" href="#about">Nosotros </a></li>
                 <li class="li-submenu"><a class="smooth-scroll" href="#novedades">Novedades</a></li>
                 <li class="li-submenu">
-                  <a class="smooth-scroll" href="producto2.html">Productos</a>
+                  <a class="smooth-scroll" href="#">Productos</a>
                   <!-- First Tier Drop Down -->
-                  <div>
+                  <div id="menu-productos">
                       <ul>
                         <li class="li-img">
-                          <a class="a-products" href="revestimientos.html">- REVESTIMIENTOS</a>
-                          <img src="img/trabajoscg/trabajo6.jpg" class="img-1" alt="">
+                          <a class="a-products" href="productos/revestimientos.html">Revestimientos</a>
+                          <img src="img/menu/revestimientos.jpg" class="img-1" alt="">
                         </li>
                         <li class="li-img">
-                          <a class="a-products" href="producto1.html">- CIELORRASOS</a>
-                          <img src="img/trabajoscg/trabajo5.jpg" class="img-2" alt="">
+                          <a class="a-products" href="productos/cielorrasos.html">Cielorrasos</a>
+                          <img src="img/menu/cielorrasos.jpg" class="img-2" alt="">
                         </li>
                         <li class="li-img">
-                          <a class="a-products" href="producto2.html">- CONTROL SOLAR</a>
-                          <img src="img/trabajoscg/trabajo4.jpg" class="img-3" alt="">
+                          <a class="a-products" href="productos/controlsolar.html">Control Solar</a>
+                          <img src="img/menu/control-solar2.jpg" class="img-3" alt="">
                         </li>
                         <li class="li-img">
-                          <a class="a-products" href="producto2.html">- ACÚSTICOS</a>
-                          <img src="img/trabajoscg/trabajo8.jpg" class="img-4" alt="">
+                          <a class="a-products" href="productos/acusticos.html">Acústicos</a>
+                          <img src="img/menu/acusticos2.jpg" class="img-4" alt="">
                         </li>
                       </ul>
-                      <img src="img/trabajoscg/trabajo1.jpg" class="img-default" alt="">
+                      <img src="img/menu/cielorrasos2.jpg" class="img-default" alt="">
                   </div>
                 </li>
                 <li class="li-submenu"> <a class="smooth-scroll" href="#work">Obras</a></li>
@@ -99,7 +98,7 @@ require('send_form-email.php');
             <h3>CG S.A. <br>  <span class="underline--magical">innovación arquitectónica</span>. </h3>
           </div>
           <div id="home-btn" class="animated zoomIn">
-            <a class="btn btn-lg btn-general btn-white smooth-scroll" href="nosotros.html" role="button" title="sumarte">Saber Más</a>
+            <a class="btn btn-lg btn-white btn-general smooth-scroll" href="#about" role="button" title="mas">Saber Más</a>
           </div>
           <div class="arrow arrow-first"></div>
           <div class="arrow arrow-second"></div>
@@ -133,7 +132,7 @@ require('send_form-email.php');
                 </div>
 
                 <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                  <a class="btn btn-lg btn-general btn-blue smooth-scroll " href="nosotros.html">Saber Mas</a>
+                  <a class="btn btn-lg btn-general btn-blue" href="nosotros.html">Saber Mas</a>
 
                 </div>
 
@@ -176,9 +175,9 @@ require('send_form-email.php');
                 <h3><span class="underline--magical">El desafío acustico del Teatro del Bicentenario</span></h3>
                 <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. La obra elegida para esa función especial fue Carmina Burana, interpretada por La Fura dels Baus. </p>
               </div>
-              <div class="novedad" id="myBtn">
+              <div class="novedad" id="myBtn2">
                 <img src="img/novedades/novedad8.jpg" alt="novedad" class="img-responsive">
-                <h3><span class="underline--magical">Creatividad para viviendas únicas</span></h3>
+                <a href="#" class="effect-shine"> <h3><span class="underline--magical">Creatividad para viviendas únicas</span></h3></a>
                 <p>La vivienda Flor de Lis ubicada en el Golf Pinamar, se destaca por su identidad moderna y distintiva. Los paneles metálicos de SCREENDOT fueron decisivos para lograr ese perfil.</p>
               </div>
               <div class="novedad" id="myBtn">
@@ -206,14 +205,25 @@ require('send_form-email.php');
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="img/novedades/fondo.svg" alt="">
-    <h3 >El desafío acustico del Teatro del Bicentenario</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <img src="img/novedades/novedad6portada.jpg" alt="">
+    <p class="novedad-date">Octubre 2018</p>
+    <h3><span class="underline--magical">El desafío acustico del Teatro del Bicentenario</span></h3>
+
+        <p class="novedad-by">By CG Sociedad Anonima  </p>
+    <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. La obra elegida para esa función especial fue Carmina Burana, interpretada por La Fura dels Baus. La energía de la presentación emocionó a todos los presentes.
+La magnificencia del edificio, el orgullo local por el logro arquitectónico y la performance de los artistas dieron forma a una velada inolvidable, que marcó un hito en la escena cultural sanjuanina. La sala fue la gran protagonista de la noche. Y los factores de ese suceso se encuentran en la estética y la acústica de las paredes, escenario y palcos. Para ello, el aporte de CG durante la terminación del proyecto fue clave, ya que en el proceso de revestimiento de la sala se aplicaron las placas PLATTEN MAD. El Teatro del Bicentenario ratifica la capacidad de CG para resolver grandes obras con eficiencia y en los tiempos requeridos.
+Acerca de las características el proyecto, Noemí Bilinski, Gerenta General de CG, especifica: “El desafío era alcanzar un eficaz rendimiento sonoro. Y se logró a través de las placas PLATTEN MAD, que se complementan con paneles de lana acústicos en su interior, sin dejar de lado las terminaciones en madera natural que requería el proyectista”.
+Las placas PLATTEN MAD son de uso interior y se destacan por su flexibilidad y adaptabilidad, ya que permiten crear módulos especiales de grandes dimensiones o de formas irregulares. Su implementación representa un atributo diferencial de este proyecto, ya que se utilizaron sistemas de varas en color Noce Nero, que desarrollan un comportamiento acústico destacado.
+El modelo elegido fue Lamas PLATTEN, el panel acústico de PLATTEN. Está conformado por un alma de lana de vidrio de alta densidad, que acondiciona acústicamente los espacios. De esa manera evita las refracciones de ruidos no deseados y mejora la calidad acústica interna.
+Natalia Piorno estuvo a cargo del proyecto por parte de CG. Explica por qué se optó por este modelo, que se aplicó en muros interiores y frentes de palcos: “Tiene cualidades que lo hacen imprescindible para un teatro de este tipo. La terminación en madera y practicidad para la colocación representan beneficios tanto en la instancia de obra como durante la vida útil del edificio”.
+Por su parte, Marco Pasinato, uno de los arquitectos responsables del proyecto, detalla los motivos por los cuales PLATTEN era la mejor solución para la sala: “Las formas y la disposición de los elementos interiores y su materialidad están pensadas para garantizar una acústica de calidad en todos los espacios. El manejo de esas variables es la base de la potencia y la calidad del sonido.”
+Al repasar el listado de emprendimientos de gran magnitud que CG ha completado con éxito, Bilinkis concluye: “Con este tipo de proyectos, CG sigue presente en las grandes obras que dan forma a la arquitectura de nuestro país”.
+</p>
   </div>
 
 </div>
+
 
 
 
@@ -231,7 +241,7 @@ require('send_form-email.php');
       <div class="container-fluid">
         <div class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
                 <a href="img/trabajoscg/trabajo1.jpg" title="Aeropuerto Argentina 2000">
             <img src="img/trabajoscg/trabajo1.jpg" alt="" class="img-responsive">
@@ -239,7 +249,7 @@ require('send_form-email.php');
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo2.jpg" title="La Caja Seguros">
             <img src="img/trabajoscg/trabajo2.jpg" alt="" class="img-responsive">
@@ -247,7 +257,7 @@ require('send_form-email.php');
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo3.jpg" title="Casa Nordelta">
             <img src="img/trabajoscg/trabajo3.jpg" alt="" class="img-responsive">
@@ -255,7 +265,7 @@ require('send_form-email.php');
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo4.jpg" title="Concecionaria Nissan">
             <img src="img/trabajoscg/trabajo4.jpg" alt="" class="img-responsive">
@@ -263,7 +273,7 @@ require('send_form-email.php');
             </div>
           </div>
       <!-- NO ES NECESARIO AGREGAR OTRA ROW, AUTOMATICAMENTE AL NO ENTRAR EN LAS 12 COL, LAS AGREGA ABAJO. -->
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo5.jpg" title="Trilenium Casino">
             <img src="img/trabajoscg/trabajo5.jpg" alt="" class="img-responsive">
@@ -273,7 +283,7 @@ require('send_form-email.php');
 
 
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo6.jpg" title="Shopping DOT">
             <img src="img/trabajoscg/trabajo6.jpg" alt="" class="img-responsive">
@@ -281,7 +291,7 @@ require('send_form-email.php');
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo7.jpg" title="DER">
             <img src="img/trabajoscg/trabajo7.jpg" alt="" class="img-responsive">
@@ -289,7 +299,7 @@ require('send_form-email.php');
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <div class="img-wrapper">
               <a href="img/trabajoscg/trabajo8.jpg" title="Auditorio">
             <img src="img/trabajoscg/trabajo8.jpg" alt="" class="img-responsive">
@@ -307,7 +317,7 @@ require('send_form-email.php');
   </section>
 
   <div id="obras-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#historia">Ver más Obras</a>
+    <a class="btn btn-lg btn-general btn-blue" href="obras.html">Ver más Obras</a>
   </div>
 
 
@@ -328,23 +338,49 @@ require('send_form-email.php');
         <div class="col-md-12">
           <div id="clientes-list" class="owl-carousel owl-theme">
             <div class="cliente">
-              <img src="img/clientes/cliente1.png" alt="cliente" class="img-responsive">
+              <img src="img/clientes/cliente1.jpg" alt="cliente" class="img-responsive">
             </div>
             <div class="cliente">
-              <img src="img/clientes/cliente2.png" alt="cliente" class="img-responsive">
+              <img src="img/clientes/cliente2.jpg" alt="cliente" class="img-responsive">
             </div>
             <div class="cliente">
-              <img src="img/clientes/cliente3.png" alt="cliente" class="img-responsive">
+              <img src="img/clientes/cliente3.jpg" alt="cliente" class="img-responsive">
             </div>
             <div class="cliente">
-              <img src="img/clientes/cliente4.png" alt="cliente" class="img-responsive">
+              <img src="img/clientes/cliente4.jpg" alt="cliente" class="img-responsive">
             </div>
             <div class="cliente">
-              <img src="img/clientes/cliente5.png" alt="cliente" class="img-responsive">
+              <img src="img/clientes/cliente5.jpg" alt="cliente" class="img-responsive">
             </div>
             <div class="cliente">
-              <img src="img/clientes/cliente6.png" alt="cliente" class="img-responsive">
+              <img src="img/clientes/cliente7.jpg" alt="cliente" class="img-responsive">
             </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente8.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente9.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente10.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente11.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente12.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente13.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente14.jpg" alt="cliente" class="img-responsive">
+            </div>
+            <div class="cliente">
+              <img src="img/clientes/cliente15.jpg" alt="cliente" class="img-responsive">
+            </div>
+
+
           </div>
         </div>
 
@@ -411,17 +447,38 @@ require('send_form-email.php');
           <div id="contact-right">
               <h3>Contactanos.</h3>
 
-              <form class="form" action="send_form_email.php" method="post" name="contactform">
-                  <input type="text" name="first_name" placeholder="Nombre"value="" class="form-control">
-                  <input type="text" name="last_name" placeholder="Apellido" value="" class="form-control">
-                  <input type="text" name="telephone" placeholder="Teléfono" value="" class="form-control">
-                  <input type="email" name="email" placeholder="Email"value="" class="form-control">
+              <form method="post" action="contacto.php">
+              									<div class="row">
+              										<div class="col-md-6">
+              											<div class="form-group">
+              												<input class="form-control" type="text" name="nombre" placeholder="Nombre">
+              												<p class="help-block text-danger"></p>
+              											</div>
+              										</div>
+              										<div class="col-md-6">
+              											<div class="form-group">
+              												<input class="form-control" type="text" name="telefono" placeholder="Telefono">
 
-                  <textarea rows="5" name="comments" placeholder="Mensaje" class="form-control"></textarea>
-                  <div id="send-btn">
-                    <button type="submit" class="btn btn-lg btn-general btn-white" role="button">Enviar</button>
-                  </div>
-              </form>
+              											</div>
+              										</div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <input class="form-control" type="email" name="email" placeholder="E-mail">
+                                      <p class="help-block text-danger"></p>
+                                    </div>
+                                  </div>
+              										<div class="col-md-12">
+              											<div class="form-group">
+              												<textarea class="form-control" name="mensaje" placeholder="Mensaje" rows="12"></textarea>
+              											</div>
+              										</div>
+              										<div class="col-md-12">
+              											<div class="text-center">
+              												<input class="btn btn-general  " type="submit" name="submit"  value="Enviar">
+              											</div>
+              										</div>
+              									</div>
+              								</form>
             </div>
           </div>
         </div>
@@ -429,7 +486,7 @@ require('send_form-email.php');
     </div>
 
 
-  </div>
+
 
 <!-- div#footer-bottom>div.container>div.row>div.col-md-6{copyrights}+div.col-md-6{footer-menu}  CREADO CON EMMET-->
 <div id="footer-bottom">
@@ -440,7 +497,7 @@ require('send_form-email.php');
           <p>Copyrights &copy; 2018 Desarrollo SSPV</p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 hidden-sm hidden-xs">
         <div id="footer-menu">
           <ul>
             <li><a href="#home">Home</a>/</li>

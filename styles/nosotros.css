@@ -24,7 +24,27 @@ p {
 }
 
 
+/*=============================================================================
+                                  LOADER
+===========================================================================*/
 
+
+#loader {
+
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  background: url(../img/loader.gif) center no-repeat #fff;
+
+}
+
+
+.noloader{
+  display: none !important;
+}
 
 
 
@@ -142,7 +162,7 @@ nav ul li {
   display:inline-block;
 	}
 
-nav li a.smooth-scroll {
+nav li a.menu-item {
   color: white;
 }
 
@@ -155,7 +175,7 @@ nav a {
   text-decoration:none;
 }
 
-nav a.smooth-scroll:hover {
+nav a.menu-item:hover {
   background-color: white;
   color: black;
 }
@@ -186,12 +206,15 @@ nav ul li:hover ul li{
 
 .a-products{
   color: rgb(39, 40, 41);
-  font-weight: 700;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
 }
 
 .a-products:hover{
-  color: black;
-  text-shadow: 0px 0.1px gray;
+  color: #000;
+  text-shadow: 0px 0.3px gray;
   text-decoration: none !important;
 }
 
@@ -200,7 +223,7 @@ nav ul li:hover {
   background-color: white;
 }
 
-nav ul li:hover a.smooth-scroll{
+nav ul li:hover a.menu-item{
   color: rgb(70,64,64) !important;
 }
 
@@ -220,7 +243,7 @@ nav ul li div {
   position: relative;
   top: -1000px;
   opacity: 0;
-  transition: opacity .6s ease-out;
+  transition: opacity  ease-out;
 }
 
 nav ul li:hover div {
@@ -309,6 +332,10 @@ img.logocg2 {
 #home-cover {
   height: 100%;
   background-image: url(../img/portadas/portada.jpg);
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 #home-content-box {
@@ -330,6 +357,19 @@ img.logocg2 {
   font-size: 55px;
   font-weight: 700;
   margin: 20px 0 20px 0;
+}
+
+
+/*=============================================================================
+                                  PARALLAX EFFECT
+===========================================================================*/
+
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*EFECTO PARALLAX*/
+  background-attachment: fixed;
 }
 
 /*=============================================================================
@@ -425,13 +465,20 @@ img.logocg2 {
 }
 
 .description{
-  height: 200px;
-  background-color: rgb(232, 222, 88, .9);
+  height: 30%;
+  background-color: #bdb555 !important;
+  background-color: khaki;
+
+
 }
 
 #descrip-cover {
   height: 100%;
   background-image: url(../img/portadas/portada3byn.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #lead{
@@ -441,7 +488,7 @@ img.logocg2 {
   font-weight: lighter;
   flex-direction: rgb(35, 35, 36);
   text-align: center !important;
-  margin: 50px 20px;
+  margin: 8% 10%;
 }
 
 
@@ -458,9 +505,12 @@ img.logocg2 {
 
 
 #stats-cover {
-  background-image: url(../img/productos/diagonal.jpg);
-  background-repeat: none;
+  background-image: url(../img/productos/revestimientos/SkinwallMetalicos/screendot.jpg);
+  background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 
 }

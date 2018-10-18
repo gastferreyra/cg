@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CGSA</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/logos/logocg.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -23,6 +23,7 @@
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset='65'>
     <!-- data offset sirve para determinar el tamaño del menú para que el highlight tome esos parametros antes de marcar ubicación-->
 
+    <div id="loader"></div>
 
       <header>
           <nav class="navbar navbar-fixed-top" role="navigation">
@@ -42,37 +43,37 @@
                 </div>
                 <div class="collapse navbar-collapse" id="cg-menu">
                   <ul class="nav navbar-nav">
-                    <li class="li-submenu"> <a class="smooth-scroll" href="#home" class="color1">Home</a></li>
-                    <li class="li-submenu"> <a class="smooth-scroll" href="#about">Nosotros </a></li>
-                    <li class="li-submenu"><a class="smooth-scroll" href="#novedades">Novedades</a></li>
+                    <li class="li-submenu"> <a class="menu-item" href="index.html" class="color1">Home</a></li>
+                    <li class="li-submenu"> <a class="menu-item"  href="nosotros.html">Nosotros </a></li>
+                    <li class="li-submenu"><a class="menu-item"  href="nosotros.html#novedades">Novedades</a></li>
                     <li class="li-submenu">
-                      <a class="smooth-scroll" href="producto2.html">Productos</a>
+                      <a class="menu-item">Productos</a>
                       <!-- First Tier Drop Down -->
                       <div>
                           <ul>
                             <li class="li-img">
-                              <a class="a-products" href="producto2.html">- REVESTIMIENTOS</a>
-                              <img src="img/trabajoscg/trabajo6.jpg" class="img-1" alt="">
+                              <a class="a-products" href="productos/revestimientos.html">Revestimientos</a>
+                              <img src="img/menu/revestimientos.jpg" class="img-1" alt="">
                             </li>
                             <li class="li-img">
-                              <a class="a-products" href="producto1.html">- CIELORRASOS</a>
-                              <img src="img/trabajoscg/trabajo5.jpg" class="img-2" alt="">
+                              <a class="a-products" href="productos/cielorrasos.html">Cielorrasos</a>
+                              <img src="img/menu/cielorrasos.jpg" class="img-2" alt="">
                             </li>
                             <li class="li-img">
-                              <a class="a-products" href="producto2.html">- CONTROL SOLAR</a>
-                              <img src="img/trabajoscg/trabajo4.jpg" class="img-3" alt="">
+                              <a class="a-products" href="productos/controlsolar.html">Control Solar</a>
+                              <img src="img/menu/control-solar2.jpg" class="img-3" alt="">
                             </li>
                             <li class="li-img">
-                              <a class="a-products" href="producto2.html">- ACÚSTICOS</a>
-                              <img src="img/trabajoscg/trabajo8.jpg" class="img-4" alt="">
+                              <a class="a-products" href="productos/acusticos.html">Acústicos</a>
+                              <img src="img/menu/acusticos2.jpg" class="img-4" alt="">
                             </li>
                           </ul>
-                          <img src="img/trabajoscg/trabajo1.jpg" class="img-default" alt="">
+                          <img src="img/menu/cielorrasos2.jpg" class="img-default" alt="">
                       </div>
                     </li>
-                    <li class="li-submenu"> <a class="smooth-scroll" href="#work">Obras</a></li>
-                    <li class="li-submenu"><a class="smooth-scroll" href="#clientes">Clientes</a></li>
-                    <li class="li-submenu"><a class="smooth-scroll" href="#contact">Contacto</a></li>
+                    <li class="li-submenu"> <a class="menu-item"  href="#work">Obras</a></li>
+                    <li class="li-submenu"><a class="menu-item"  href="#clientes">Clientes</a></li>
+                    <li class="li-submenu"><a class="menu-item"  href="#contact">Contacto</a></li>
                   </ul>
                 </div>
               </div>
@@ -106,7 +107,7 @@
             <div  class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                    <p class="lead" id="lead">Somos una joven compañía industrial pensada y formada para ofrecer <strong>excelencia</strong> en el desarrollo
+                    <p class="lead text-center" id="lead">Somos una joven compañía industrial pensada y formada para ofrecer <strong>excelencia</strong> en el desarrollo
                         y fabricación, tanto de productos de marca propia como de servicios. <br> <strong>Somos Innovación.</strong>
                     </p>
                 </div>
@@ -129,28 +130,28 @@
         <div class="container">
           <div class="row text-center wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="stats-item">
                 <h2><span class="counter"> 2000</span><span>+</span></h2>
                 <p>Tipos de Material</p>
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="stats-item">
                 <h2><span class="counter">10</span><span>+</span></h2>
                 <p>Marcas exlusivas</p>
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="stats-item">
                 <h2><span class="counter">200</span><span>+</span></h2>
                 <p>Obras concretadas</p>
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="stats-item">
                 <h2><span class="counter">500</span><span>+</span></h2>
                 <p>Clientes </p>
@@ -312,17 +313,38 @@
           <div id="contact-right">
               <h3>Contactanos.</h3>
 
-              <form class="form" action="send_form_email.php" method="post" name="contactform">
-                  <input type="text" name="first_name" placeholder="Nombre"value="" class="form-control">
-                  <input type="text" name="last_name" placeholder="Apellido" value="" class="form-control">
-                  <input type="text" name="telephone" placeholder="Teléfono" value="" class="form-control">
-                  <input type="email" name="email" placeholder="Email"value="" class="form-control">
+              <form method="post" action="contacto.php">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <input class="form-control" type="text" name="nombre" placeholder="Nombre">
+                                      <p class="help-block text-danger"></p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <input class="form-control" type="text" name="telefono" placeholder="Telefono">
 
-                  <textarea rows="5" name="comments" placeholder="Mensaje" class="form-control"></textarea>
-                  <div id="send-btn">
-                    <button type="submit" class="btn btn-lg btn-general btn-white" role="button">Enviar</button>
-                  </div>
-              </form>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <input class="form-control" type="email" name="email" placeholder="E-mail">
+                                      <p class="help-block text-danger"></p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <textarea class="form-control" name="mensaje" placeholder="Mensaje" rows="12"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="text-center">
+                                      <input class="btn btn-general  " type="submit" name="submit"  value="Enviar">
+                                    </div>
+                                  </div>
+                                </div>
+               </form>
             </div>
           </div>
         </div>
@@ -341,7 +363,7 @@
                   <p>Copyrights &copy; 2018 Desarrollo SSPV</p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 hidden-sm hidden-xs">
                 <div id="footer-menu">
                   <ul>
                     <li><a href="#home">Home</a>/</li>

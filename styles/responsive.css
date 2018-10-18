@@ -1,0 +1,298 @@
+/*============================================================================
+                            MEDIA QUERIES
+=============================================================================*/
+
+
+
+
+/* Tablets  Medianas y Ipad Pro*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+
+    .navbar{
+      background: rgba(0,0,0,0.7);
+      padding: 0;
+    }
+
+    .navbar-nav{
+      float: left;
+    }
+
+    .cg-nav-wrapper{
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    img.logocg1{
+      width: 70%;
+      margin-top: -19px;
+
+
+    }
+
+    img.logocg2 {
+      opacity: 0;
+      width: 70%;
+      margin-top: -50px;
+      position: relative;
+
+    }
+
+
+
+}
+
+
+
+/*Ipad y Tablets */
+
+@media (min-width:768px) and (max-width:991px) {
+
+  .navbar{
+    background: rgba(0,0,0,0.7);
+    padding: 0
+  }
+
+  .navbar-nav{
+    float: left;
+  }
+
+  .cg-nav-wrapper{
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  #about-bg-diagonal{
+    border-left: 0;
+    border-top:0;
+    width: 100%;
+    height: 350px;
+  }
+
+  #about-content-box{
+    width: 100%;
+    height: 350px;
+  }
+
+  .stats-item{
+    padding: 20px 0;
+  }
+
+#footer-copyrights p{
+  text-align: center !important;
+}
+
+img.logocg1{
+  width: 60%;
+
+
+}
+
+img.logocg2 {
+  opacity: 0;
+  width: 60%;
+  margin-top: -42px;
+  position: relative;
+}
+
+
+
+
+}
+
+
+/*Mobile */
+
+@media (max-width:767px) {
+
+        .navbar{
+          background: rgba(0,0,0,0.7);
+          padding: 0
+        }
+
+        .navbar-nav{
+          float: left;
+        }
+
+        .cg-nav-wrapper{
+          margin-top: 10px;
+          padding: 0;
+        }
+
+        #home-heading h3{
+          font-size: 24px;
+        }
+
+        .btn-general{
+          padding: 6px 22px 6px 22px;
+          font-size: 14px;
+        }
+
+        #about-bg-diagonal{
+          border-left: 0;
+          border-top:0;
+          width: 100%;
+          height: 300px;
+        }
+
+        #about-content-box{
+          width: 100%;
+          height: 350px;
+        }
+
+      .img-wrapper img{
+        min-width: 100%;
+      }
+
+      .stats-item{
+        padding: 20px 0;
+      }
+
+      #footer-copyrights p{
+        text-align: center !important;
+      }
+
+      #about{
+        margin-bottom: 50px;
+      }
+
+
+      img.logocg1{
+        width: 60%;
+      }
+
+      img.logocg2 {
+        opacity: 0;
+        width: 60%;
+        margin-top: -42px;
+        position: relative;
+      }
+
+
+
+
+}
+
+
+@media (max-width:480px) {
+
+
+    #about{
+      margin-bottom: 100px;
+    }
+
+    img.logocg1{
+      width: 50%;
+      margin-top: -15px;
+
+    }
+
+    img.logocg2 {
+      opacity: 0;
+      width: 50%;
+
+    }
+
+    .navbar-brand{
+      float: none;
+    }
+
+    #home-cover {
+      background-attachment: initial;
+    }
+
+    #about-bg-diagonal{
+      background-attachment: initial;
+    }
+
+    #descrip-cover{
+      background-attachment: initial;
+    }
+
+    #stats-cover{
+      background-attachment: initial;
+    }
+
+    .description{
+      background-color: khaki ;
+    }
+
+    #lead{
+        margin: 7% 10%;
+    }
+
+    #stats-cover{
+      background-attachment: initial;
+    }
+
+    .bg-parallax{
+      background-attachment: initial;
+    }
+
+
+
+    #menu-productos img{
+      display: none;
+
+    }
+
+
+}
+
+
+@media(max-width:320px){
+
+    #about-content-box{
+      margin-top: 40px;
+    }
+
+    img.logocg1{
+      width: 50%;
+      margin-top: -10px;
+
+
+    }
+
+    img.logocg2 {
+      opacity: 0;
+      width: 50%;
+      margin-top: -32px;
+
+    }
+
+    .navbar-brand{
+      float: none;
+    }
+
+    #home-cover {
+  background-attachment: initial;
+    }
+
+    #about-bg-diagonal{
+      background-attachment: initial;
+    }
+
+    #descrip-cover{
+      background-attachment: initial;
+    }
+
+    #stats-cover{
+      background-attachment: initial;
+    }
+
+    .description{
+      background-color: khaki ;
+    }
+
+    .bg-parallax{
+      background-attachment: initial;
+    }
+
+#menu-productos img{
+  display: none;
+}
+
+
+
+}

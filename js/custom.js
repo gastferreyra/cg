@@ -1,5 +1,5 @@
 /*===========================================================================
-                                SERVICES
+                                EFECTOS
 ===========================================================================*/
 
 $(function() {
@@ -7,10 +7,18 @@ $(function() {
 });
 
 
+/*===========================================================================
+                            LOADER
+===========================================================================*/
+
+$('#loader').delay(3000).queue(function(){
+  $(this).addClass("noloader");
+});
+
 
 
 /*===========================================================================
-                                COMUNIDAD
+                                OBRAS
 ===========================================================================*/
 $(function() {
   $("#work").magnificPopup({
@@ -23,16 +31,29 @@ $(function() {
 });
 
 
+
+// $(document).load(function(){
+//
+//   var $container = $(".masonry-container");
+//   $container.Imagesloaded(function(){
+//     $container.masonry({
+//       columnWidth: ".grid-sizer",
+//       itemSelector: ".item"
+//     });
+//   });
+// });
+
 /*===========================================================================
-                                NOSOTROS
+                                IMAGEN PRODUCTOS
 ===========================================================================*/
+
 $(function() {
-  $("#team-members").owlCarousel({
-    items: 3,
-    autoplay: true,
-    smartSpeed: 700,
-    loop: true,
-    autoplayHoverPause: true
+  $("#img-producto").magnificPopup({
+    delegate: 'a', // child items selector, by clicking on it popup will open
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
   });
 });
 
@@ -42,6 +63,7 @@ $(function() {
 /*===========================================================================
                                 ESTADÍSTICAS
 ===========================================================================*/
+
 $(function() {
   $('.counter').counterUp({
     delay: 10,
@@ -51,20 +73,39 @@ $(function() {
 
 
 /*===========================================================================
-                                clientes
+                                CLIENTES
 ===========================================================================*/
 $(function() {
   $("#clientes-list").owlCarousel({
-    items: 5,
+    items: 6,
     autoplay: true,
     smartSpeed: 700,
     loop: true,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:3
+            },
+
+            // breakpoint from 768 up
+            768 : {
+                items:5
+            },
+
+            992 : {
+              items: 6
+            }
+          }
   });
 });
 
 /*===========================================================================
-                                Novedades
+                                NOVEDADES
 ===========================================================================*/
 $(function() {
   $("#novedades-list").owlCarousel({
@@ -72,7 +113,25 @@ $(function() {
     autoplay: true,
     smartSpeed: 700,
     loop: true,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive : {
+      // breakpoint from 0 up
+      0 : {
+          items:1
+      },
+      // breakpoint from 480 up
+      480 : {
+          items:2
+      },
+      // breakpoint from 768 up
+      620 : {
+          items:2
+      },
+
+      992 : {
+        items: 3
+      }
+}
   });
 });
 
@@ -89,6 +148,7 @@ $(function() {
      $("img.logocg1").css('opacity', '1');
      $("img.logocg2").css('opacity', '0');
      $("#back-to-top").fadeOut();
+      $("nav li a.smooth-scroll").removeClass("cg-nav-hov");
    } else {
      /* Si es mayor, mostrar navigation bar */
      $("nav").addClass("cg-top-nav");
@@ -96,9 +156,42 @@ $(function() {
      $("img.logocg1").css('opacity', '0');
      $("img.logocg2").css('opacity', '1');
      $("#back-to-top").fadeIn();
+     $("nav li a.smooth-scroll").addClass("cg-nav-hov");
+
+
    }
    });
  });
+
+
+
+ /*===========================================================================
+                                 NAVIGATION (Productos)
+ ===========================================================================*/
+ $(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop() <50 ) {
+      /* Si window scroll top es menor a 50px esconder navigation bar */
+      $("nav").removeClass("cg-top-nav");
+      $("nav li a.menu-item").css('color', 'white');
+      $("img.logocg1").css('opacity', '1');
+      $("img.logocg2").css('opacity', '0');
+      $("#back-to-top").fadeOut();
+       $("nav li a.menu-item").removeClass("cg-nav-hov");
+    } else {
+      /* Si es mayor, mostrar navigation bar */
+      $("nav").addClass("cg-top-nav");
+      $("nav li a.menu-item").css('color', 'rgb(70,63,64)');
+      $("img.logocg1").css('opacity', '0');
+      $("img.logocg2").css('opacity', '1');
+      $("#back-to-top").fadeIn();
+      $("nav li a.menu-item").addClass("cg-nav-hov");
+
+
+    }
+    });
+  });
+
 
 /* Smooth Scrolling*/
 
@@ -119,19 +212,6 @@ $(function() {
 
 
 
-
-/*===========================================================================
-                                NOSOTROS
-===========================================================================*/
-$(function() {
-  $("#team-members").owlCarousel({
-    items: 3,
-    autoplay: true,
-    smartSpeed: 700,
-    loop: true,
-    autoplayHoverPause: true
-  });
-});
 
 
 
@@ -207,11 +287,6 @@ $(function() {
 
 
 
-    // // Wait for window load
-    // $(window).load(function() {
-    //   // Animate loader off screen
-    //   $(".se-pre-con").fadeOut("slow");
-    // });
 
     /*===========================================================================
                                   MODAL (Novedades)
@@ -243,3 +318,15 @@ $(function() {
             modal.style.display = "none";
         }
     }
+
+
+
+    /*===========================================================================
+                                  CERRAR MENU MOBILE ONCLICK
+    ===========================================================================*/
+
+    $(function(){
+      $(".navbar-collapse ul li a").on("click touch", function(){
+        $(".navbar-toggle").click();
+      });
+    });

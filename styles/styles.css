@@ -27,20 +27,25 @@ p {
                                   LOADER
 ===========================================================================*/
 
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript,
-if it's not present, don't show loader */
-/* .se-pre-con {
+
+#loader {
+
 	position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/loader.gif) center no-repeat #fff;
-} */
+  background: url(../img/loader.gif) center no-repeat #fff;
 
 
+
+}
+
+
+.noloader{
+  display: none !important;
+}
 /*=============================================================================
                                   HOME
 ===========================================================================*/
@@ -52,6 +57,13 @@ if it's not present, don't show loader */
 #home-cover {
   height: 100%;
   background-image: url(../img/portadas/portada4.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+  background-size: cover;
+
 }
 
 #home-content-box {
@@ -59,6 +71,7 @@ if it's not present, don't show loader */
   height: 100%;
   display: table;
 }
+
 
 #home-content-box-inner {
   display: table-cell;
@@ -139,6 +152,8 @@ if it's not present, don't show loader */
   color: #fff;
 }
 
+
+
 .btn-white:hover, .btn-white:focus {
   background-color: #fff;
   color: #41464b;
@@ -163,6 +178,7 @@ if it's not present, don't show loader */
   border-radius: 0;
   display: none;
 }
+
 
 /*=============================================================================
                                   CONTENT
@@ -253,8 +269,13 @@ if it's not present, don't show loader */
   padding: 0 10px 4px 10px;
   height: 480px;
   background-color: #fff;
-
 }
+
+.novedad:hover{
+height: 485px;
+width:75%;
+}
+
 
 #novedades-list{
 margin-bottom: 20px;
@@ -277,6 +298,7 @@ margin-bottom: 20px;
 
 
 
+
 /*=============================================================================
                                   MODAL NOVEDADES
 ===========================================================================*/
@@ -285,14 +307,15 @@ margin-bottom: 20px;
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10000; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    height: 100%;
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: #fff;
+    background-color: rgba(0,0,0,.8);
+
 }
 
 /* Modal Content/Box */
@@ -300,9 +323,13 @@ margin-bottom: 20px;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
+    bottom: 200px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 70%; /* Could be more or less, depending on screen size */
+
 }
+
+
 
 /* The Close Button */
 .close {
@@ -324,18 +351,48 @@ margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-size: 15px;
+  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .modal p{
-  font-family: roboto;
-  font-size: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.8em
+  text-align: left !important;
+  margin-top: 20px;
 }
 
 
 .modal img{
   width: 100%;
-  height: 80%;
+  height: 40%;
 }
+
+.novedad-date{
+  color: #000;
+  text-align: right !important;
+  margin-top: 10px;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+  font-weight: bold !important;
+  color: rgb(34, 34, 34);
+}
+
+
+
+.novedad-by {
+  color: #000;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+
+}
+
+
+
 
 /*=============================================================================
                                   OBRAS
@@ -365,9 +422,11 @@ margin-bottom: 20px;
 
 
 #obras-btn{
-margin-left: 45%;
+text-align: center;
 margin-bottom: 50px;
 }
+
+
 
 
 /*=============================================================================
@@ -458,7 +517,7 @@ h4.team-member-designation {
 }
 
 .cg-top-nav{
-  background: rgb(255, 254, 254);
+  background: rgba(255, 255, 255);
   padding: 7px 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -500,6 +559,23 @@ h4.team-member-designation {
   color: #ffe806;
 }
 
+
+nav li a.smooth-scroll.cg-nav-hov:hover{
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+}
 /*=============================================================================
                                   PROD SUBMENU
 ===========================================================================*/
@@ -599,12 +675,15 @@ nav ul li:hover ul li{
 
 .a-products{
   color: rgb(39, 40, 41);
-  font-weight: 700;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
 }
 
 .a-products:hover{
-  color: black;
-  text-shadow: 0px 0.1px gray;
+  color: #000;
+  text-shadow: 0px 0.3px gray;
   text-decoration: none !important;
 }
 
@@ -633,7 +712,7 @@ nav ul li div {
   position: relative;
   top: -1000px;
   opacity: 0;
-  transition: opacity .6s ease-out;
+  transition: opacity  ease-out;
 }
 
 nav ul li:hover div {
@@ -673,7 +752,6 @@ nav ul li img.img-4 {
 nav ul li img.img-default{
   top: 67px;
   left: -31px;
-
   z-index: 1;
 }
 
@@ -835,7 +913,23 @@ form .form-control{
   color: #fff;
 }
 
+.alert {
+	padding: 1em;
+	color:#fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
 
+.alert.error {
+	background: #F2DEDE;
+	border:1px solid #a94442;
+	color: #a94442;
+}
+
+.alert.success {
+	background: #4CAF50;
+}
 
 
 
