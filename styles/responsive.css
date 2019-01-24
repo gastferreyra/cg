@@ -5,11 +5,14 @@
 
 
 
+
+
+
 /* Tablets  Medianas y Ipad Pro*/
 
 @media (min-width:992px) and (max-width:1199px) {
 
-
+/* NAVIGATION */
     .navbar{
       background: rgba(0,0,0,0.7);
       padding: 0;
@@ -24,22 +27,30 @@
       padding: 0;
     }
 
-    img.logocg1{
-      width: 70%;
-      margin-top: -19px;
-
-
-    }
-
-    img.logocg2 {
+    .logocgMobile img{
       opacity: 0;
-      width: 70%;
+      width: 30%;
       margin-top: -50px;
       position: relative;
-
     }
 
+    .navMobileWrapper img{
+    width: 25%;
+    position: relative;
+    left: -6vw;
+    }
 
+    /* NOVEDADES */
+
+    img.img-modal-novedad {
+      width: 80%;
+    }
+
+/* PRODUCTOS/OBRAS */
+
+    .snip1538 h3{
+          font-size: 10px;
+        }
 
 }
 
@@ -48,6 +59,9 @@
 /*Ipad y Tablets */
 
 @media (min-width:768px) and (max-width:991px) {
+
+
+/* NAVIGATION */
 
   .navbar{
     background: rgba(0,0,0,0.7);
@@ -63,6 +77,8 @@
     padding: 0;
   }
 
+/* NOSOTROS */
+
   #about-bg-diagonal{
     border-left: 0;
     border-top:0;
@@ -75,27 +91,73 @@
     height: 350px;
   }
 
+  #home-heading h3{
+    font-size: 45px;
+  }
+/* ESTADÍSTICAS */
+
   .stats-item{
     padding: 20px 0;
   }
+
+  /* FOOTER */
 
 #footer-copyrights p{
   text-align: center !important;
 }
 
-img.logocg1{
-  width: 60%;
 
-
+#home-cover {
+  background-attachment: initial;
 }
 
-img.logocg2 {
-  opacity: 0;
-  width: 60%;
-  margin-top: -42px;
-  position: relative;
+#about-bg-diagonal{
+  background-attachment: initial;
 }
 
+#descrip-cover{
+  background-attachment: initial;
+}
+
+#stats-cover{
+  background-attachment: initial;
+}
+
+.caption h3{
+    font-size: 22px;
+  }
+
+.caption p{
+    font-size: 10px;
+}
+
+.snip1538 h3{
+      font-size: 10px;
+    }
+
+.navMobileWrapper img{
+width: 30%;
+position: relative;
+left: -6vw;
+}
+
+
+/* MODAL  */
+
+.modal-content {
+    width: 90%; /* Could be more or less, depending on screen size */
+    bottom: 50px;
+    padding: 40px !important;
+}
+
+img.img-modal-novedad {
+  display: none !important;
+}
+
+
+.novedad p{
+  font-size: 0.9em;
+}
 
 
 
@@ -105,6 +167,8 @@ img.logocg2 {
 /*Mobile */
 
 @media (max-width:767px) {
+
+/* NAVIGATION */
 
         .navbar{
           background: rgba(0,0,0,0.7);
@@ -120,15 +184,32 @@ img.logocg2 {
           padding: 0;
         }
 
-        #home-heading h3{
-          font-size: 24px;
+        .navMobileWrapper img{
+        width: 40%;
+        position: relative;
+        left: -6vw;
         }
 
+        nav ul li:hover > div ul {
+              display: none;
+        }
+
+        nav ul li:hover ul li{
+              display: none;
+        }
+
+        nav ul li:hover > div img {
+              display: none;
+        }
+
+
+/* BUTTON */
         .btn-general{
           padding: 6px 22px 6px 22px;
           font-size: 14px;
         }
 
+/* NOSOTROS */
         #about-bg-diagonal{
           border-left: 0;
           border-top:0;
@@ -141,34 +222,95 @@ img.logocg2 {
           height: 350px;
         }
 
+        #about{
+          margin-bottom: 50px;
+        }
+
+
       .img-wrapper img{
         min-width: 100%;
       }
+
+      /* ESTADÍSTICAS */
 
       .stats-item{
         padding: 20px 0;
       }
 
+      #home-heading h3{
+        font-size: 50px;
+      }
+
+/* FOOTER */
       #footer-copyrights p{
         text-align: center !important;
       }
 
-      #about{
-        margin-bottom: 50px;
+      #home-cover {
+        background-attachment: initial;
       }
 
-
-      img.logocg1{
-        width: 60%;
+      #about-bg-diagonal{
+        background-attachment: initial;
       }
 
-      img.logocg2 {
-        opacity: 0;
-        width: 60%;
-        margin-top: -42px;
-        position: relative;
+      #descrip-cover{
+        background-attachment: initial;
       }
 
+      #stats-cover{
+        background-attachment: initial;
+      }
+
+/* NOVEDADES */
+
+      .modal-content {
+          width: 90%; /* Could be more or less, depending on screen size */
+          bottom: 50px;
+          padding: 40px;
+      }
+
+    img.img-modal-novedad {
+        display: none !important;
+      }
+
+      .novedad p{
+        font-size: 0.9em;
+      }
+
+      .novedad{
+        width: 80%;
+      }
+/* PRODUCTOS / OBRAS */
+
+#sidebar{
+  display: none !important;
+}
+
+      .caption h3{
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+      .caption p{
+          font-size: 13px;
+      }
+
+      .snip1538 h3{
+            font-size: 10px;
+          }
+
+      #content{
+        width: 100%;
+        margin: 120px 0 0 0;
+      }
+
+      #lead{
+            font-size: 15px;
+            vertical-align: center;
+            text-align: center;
+            margin-top: 9%;
+      }
 
 
 
@@ -177,21 +319,10 @@ img.logocg2 {
 
 @media (max-width:480px) {
 
+/* NOSOTROS */
 
     #about{
       margin-bottom: 100px;
-    }
-
-    img.logocg1{
-      width: 50%;
-      margin-top: -15px;
-
-    }
-
-    img.logocg2 {
-      opacity: 0;
-      width: 50%;
-
     }
 
     .navbar-brand{
@@ -214,12 +345,18 @@ img.logocg2 {
       background-attachment: initial;
     }
 
-    .description{
-      background-color: khaki ;
+    .content-title h3{
+      margin-top: 20px;
     }
+
+    #home-heading h3{
+      font-size: 35px;
+    }
+
 
     #lead{
         margin: 7% 10%;
+          font-size: 13px;
     }
 
     #stats-cover{
@@ -230,12 +367,72 @@ img.logocg2 {
       background-attachment: initial;
     }
 
-
+/* PRODUCTOS/OBRAS*/
 
     #menu-productos img{
       display: none;
 
     }
+
+    #sidebar{
+      display: none !important;
+    }
+
+    .caption h3{
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+
+    .caption p{
+        font-size: 10px;
+    }
+
+.snip1538 h3{
+      font-size: 10px;
+    }
+
+    #content{
+      width: 100%;
+      margin: 120px 0 0 0;
+    }
+
+    #home-productos {
+      height: 2200px;
+    }
+
+/* NAVIGATION */
+          .navMobileWrapper img{
+          width: 50%;
+          position: relative;
+          left: -6vw;
+          }
+
+
+/* NOVEDADES*/
+
+.modal-content {
+    width: 90%; /* Could be more or less, depending on screen size */
+    bottom: 50px;
+}
+
+.close {
+    color: #262626;
+}
+
+img.img-modal-novedad{
+  display: none !important;
+}
+
+.novedad p{
+  font-size: 0.9em;
+}
+
+/* OBRAS -> index*/
+
+.descripcion-obra p{
+  font-size: 12px;
+}
 
 
 }
@@ -243,27 +440,40 @@ img.logocg2 {
 
 @media(max-width:320px){
 
+
+/* NOSOTROS*/
+
     #about-content-box{
       margin-top: 40px;
     }
 
+/* NAVIGATION*/
     img.logocg1{
       width: 50%;
       margin-top: -10px;
-
-
     }
 
     img.logocg2 {
       opacity: 0;
       width: 50%;
       margin-top: -32px;
-
     }
 
     .navbar-brand{
       float: none;
     }
+
+    #menu-productos img{
+      display: none;
+    }
+
+    .navMobileWrapper img{
+    width: 50%;
+    position: relative;
+    left: -6vw;
+    }
+
+    /* PORTADAS*/
 
     #home-cover {
   background-attachment: initial;
@@ -281,18 +491,89 @@ img.logocg2 {
       background-attachment: initial;
     }
 
-    .description{
-      background-color: khaki ;
-    }
-
     .bg-parallax{
       background-attachment: initial;
     }
 
-#menu-productos img{
-  display: none;
+
+      /* NOVEDADES */
+
+    .modal-content {
+        width: 90%; /* Could be more or less, depending on screen size */
+        bottom: 50px;
+    }
+
+    .close {
+        color: #262626;
+    }
+
+    img.img-modal-novedad {
+  display: none !important;
+    }
+
+
+      /* OBRAS -> index*/
+
+      .descripcion-obra p{
+        font-size: 12px;
+      }
+
+  /* PRODUCTOS/OBRAS*/
+
+#sidebar{
+  display: none !important;
+}
+
+
+.caption h3{
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .snip1538 h3{
+        font-size: 10px;
+      }
+
+.caption p{
+    font-size: 10px;
+}
+
+#content{
+  margin: 180px 30px 0 30px;
+}
+
+
+#home-productos {
+  height: 1800px;
+}
+
+
+#lead{
+      font-size: 14px;
 }
 
 
 
+}
+
+
+
+
+/* /Oculta el menu el versiones de escritorio/ */
+@media only screen and (min-width: 1250px){
+.navMobileWrapper{
+   display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 1250px){
+body{
+   overflow-x: hidden;
+}
+
+.navbar{
+  display: none;
+}
 }

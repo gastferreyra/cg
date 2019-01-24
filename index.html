@@ -1,11 +1,9 @@
-
-
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CGSA - Innovación Arquitectónica</title>
+  <title>CG SA - Innovación Arquitectónica</title>
   <link rel="shortcut icon" href="img/logos/logocg.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
@@ -21,92 +19,160 @@
 
 </head>
 
-<body data-spy="scroll" data-target".navbar-fixed-top" data-offset='65'>  <!-- data offset sirve para determinar el tamaño del menú para que el highlight tome esos parametros antes de marcar ubicación-->
+<body data-spy="scroll" data-target".navbar-fixed-top" data-offset='65'>
+  <!-- data offset sirve para determinar el tamaño del menú para que el highlight tome esos parametros antes de marcar ubicación-->
+  <div id="loader"></div>
 
-    <div id="loader"></div>
 
 
 
   <header>
-      <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <div class="cg-nav-wrapper">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cg-menu">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand"href="#home">
-                  <img src="img/logos/logocg1.svg" alt="logo" class="logocg1">
-                  <img src="img/logos/logocg4.svg" alt="logo" class="logocg2">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="cg-menu">
-              <ul class="nav navbar-nav">
-                <li class="li-submenu"> <a class="smooth-scroll" href="#home" class="color1">Home</a></li>
-                <li class="li-submenu"> <a class="smooth-scroll" href="#about">Nosotros </a></li>
-                <li class="li-submenu"><a class="smooth-scroll" href="#novedades">Novedades</a></li>
-                <li class="li-submenu">
-                  <a class="smooth-scroll" href="#">Productos</a>
-                  <!-- First Tier Drop Down -->
-                  <div id="menu-productos">
-                      <ul>
-                        <li class="li-img">
-                          <a class="a-products" href="productos/revestimientos.html">Revestimientos</a>
-                          <img src="img/menu/revestimientos.jpg" class="img-1" alt="">
-                        </li>
-                        <li class="li-img">
-                          <a class="a-products" href="productos/cielorrasos.html">Cielorrasos</a>
-                          <img src="img/menu/cielorrasos.jpg" class="img-2" alt="">
-                        </li>
-                        <li class="li-img">
-                          <a class="a-products" href="productos/controlsolar.html">Control Solar</a>
-                          <img src="img/menu/control-solar2.jpg" class="img-3" alt="">
-                        </li>
-                        <li class="li-img">
-                          <a class="a-products" href="productos/acusticos.html">Acústicos</a>
-                          <img src="img/menu/acusticos2.jpg" class="img-4" alt="">
-                        </li>
-                      </ul>
-                      <img src="img/menu/cielorrasos2.jpg" class="img-default" alt="">
-                  </div>
-                </li>
-                <li class="li-submenu"> <a class="smooth-scroll" href="#work">Obras</a></li>
-                <li class="li-submenu"><a class="smooth-scroll" href="#clientes">Clientes</a></li>
-                <li class="li-submenu"><a class="smooth-scroll" href="#contact">Contacto</a></li>
-              </ul>
-            </div>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="cg-nav-wrapper">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cg-menu">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">
+              <img src="img/logos/logocg1.svg" alt="logo" class="logocg1">
+              <img src="img/logos/logocg4.svg" alt="logo" class="logocg2">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="cg-menu">
+            <ul class="nav navbar-nav">
+              <li class="li-submenu"> <a class="smooth-scroll" href="#home" class="color1">Home</a></li>
+              <li class="li-submenu"> <a class="smooth-scroll" href="#about">Nosotros </a></li>
+              <li class="li-submenu"><a class="smooth-scroll" href="#novedades">Novedades</a></li>
+              <li class="li-submenu">
+                <a class="smooth-scroll navProductos" href="productos/revestimientos.html">Productos</a>
+                <!-- First Tier Drop Down -->
+                <div id="menu-productos">
+                  <ul>
+                    <li class="li-img">
+                      <a class="a-products" href="productos/revestimientos.html">- Revestimientos</a>
+                      <img src="img/menu/revestimientos.jpg" class="img-1" alt="">
+                    </li>
+                    <li class="li-img">
+                      <a class="a-products" href="productos/cielorrasos.html">- Cielorrasos</a>
+                      <img src="img/menu/cielorrasos.jpg" class="img-2" alt="">
+                    </li>
+                    <li class="li-img">
+                      <a class="a-products" href="productos/controlsolar.html">- Control Solar</a>
+                      <img src="img/menu/control-solar2.jpg" class="img-3" alt="">
+                    </li>
+                    <li class="li-img">
+                      <a class="a-products" href="productos/acusticos.html">- Acústicos</a>
+                      <img src="img/menu/acusticos2.jpg" class="img-4" alt="">
+                    </li>
+                  </ul>
+                  <img src="img/menu/cielorrasos2.jpg" class="img-default" alt="">
+                </div>
+              </li>
+              <li class="li-submenu"> <a class="smooth-scroll" href="#obras">Obras</a></li>
+              <li class="li-submenu"><a class="smooth-scroll" href="#clientes">Clientes</a></li>
+              <li class="li-submenu"><a class="smooth-scroll" href="#contact">Contacto</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <!-- Nav para mobile-->
+    <nav class="navMobileWrapper">
+      <img src="img/logos/logocg1.svg" class="logocgMobile">
+      <span class="navMobileBars">
+        <div class="hamburger" id="hamburger-1">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </span>
+      <div class="navMobile">
+        <a class="navMobileScroll" href="#home">HOME</a>
+        <a class="navMobileScroll" href="#about">NOSOTROS</a>
+        <a class="navMobileScroll" href="#novedades">NOVEDADES</a>
+        <a class="navMobileProductos">
+          PRODUCTOS
+          <span>></span>
+        </a>
+        <div class="navMobileProductos-options">
+          <a href="productos/revestimientos.html">Revestimientos</a>
+          <a href="productos/cielorrasos.html">Cielorrasos</a>
+          <a href="productos/controlsolar.html">Control Solar</a>
+          <a href="productos/acusticos.html">Acusticos</a>
+        </div>
+        <a class="navMobileScroll" href="#obras">OBRAS</a>
+        <a class="navMobileScroll" href="#clientes">CLIENTES</a>
+        <a class="navMobileScroll" href="#contact">CONTACTO</a>
+      </div>
+    </nav>
+
+
 
 
 
   </header>
 
 
+  <!--
 
-  <!-- HOME -->
   <section id="home">
     <div id="home-cover" class="bg-parallax animated fadeIn">
       <div id="home-content-box">
         <div id="home-content-box-inner" class="text-center">
           <div id="home-heading" class="animated zoomIn">
-            <!-- <img id="logo-heading-cg" class=" wow animated zoomIn"src="img/logocg4.png" alt=""> -->
-            <h3>CG S.A. <br>  <span class="underline--magical">innovación arquitectónica</span>. </h3>
+            <h3>CG S.A. <br>  <span >innovación arquitectónica</span>. </h3>
           </div>
-          <div id="home-btn" class="animated zoomIn">
-            <a class="btn btn-lg btn-white btn-general smooth-scroll" href="#about" role="button" title="mas">Saber Más</a>
-          </div>
+
           <div class="arrow arrow-first"></div>
           <div class="arrow arrow-second"></div>
         </div>
       </div>
     </div>
 
-  </section>
+  </section> -->
+
+  <!-- HOME -->
+
+
+  <div class="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="5000" id="bs-carousel">
+    <!-- Overlay -->
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#bs-carousel" data-slide-to="1"></li>
+      <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item slides active carousel-item">
+        <div class="slide-1">
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="item slides carousel-item">
+        <div class="slide-2">
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="item slides carousel-item">
+        <div class="slide-3">
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="hero">
+        <hgroup>
+          <h1><span>CG S.A.</span></h1>
+          <h3><span>Innovación Arquitectónica</span></h3>
+        </hgroup>
+      </div>
+
+    </div>
+  </div>
 
 
 
@@ -127,12 +193,13 @@
                   <div class="content-title-underline"></div>
                 </div>
                 <div id="about-description" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                  <p>Somos una empresa argentina con más de 30 años de actividad ininterrumpida en el mercado de la construcción. A través de los años, con un esfuerzo coordinado, innovaciones tecnológicas de punta, y una coherente dirección empresarial, ha logrado llevar a cabo obras de gran envergadura tanto del sector público como privado.
-                  Con esta suma de condiciones y un amplio stock de materiales, buscamos cubrir todas y cada una de las necesidades de sus clientes. Ofreciendo siempre la mejor respuesta a los más difíciles requerimientos, tanto en el ámbito nacional como en el exterior.</p>
+                  <p>Somos una empresa argentina con más de 30 años de actividad ininterrumpida en el mercado de la construcción. A través de los años, con un esfuerzo coordinado, innovaciones tecnológicas de punta, y una coherente dirección
+                    empresarial, hemos logrado llevar a cabo obras de gran envergadura tanto del sector público como privado. Con esta suma de condiciones y un amplio stock de materiales, buscamos cubrir todas y cada una de las necesidades de
+                    nuestros clientes. Ofreciendo siempre la mejor respuesta a los más difíciles requerimientos, tanto en el ámbito nacional como en el exterior.</p>
                 </div>
 
                 <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                  <a class="btn btn-lg btn-general btn-blue" href="nosotros.html">Saber Mas</a>
+                  <a class="btn btn-lg btn-general btn-blue" href="nosotros.html">Saber Más</a>
 
                 </div>
 
@@ -151,85 +218,13 @@
 
 
 
-
-    <!-- NOVEDADES-->
-
-  <section id="novedades">
-    <div class="content-box" id="content-color">
-      <div class=content-title content-title-white wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s"">
-        <h3>NOVEDADES.</h3>
-        <div class="content-title-underline"></div>
-      </div>
-
-      <div class="container">
-        <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-          <div class="col-md-12">
-            <div id="novedades-list" class="owl-carousel owl-theme">
-              <div class="novedad">
-                <img src="img/novedades/novedad5.jpg" alt="novedad" class="img-responsive">
-                <h3> <span class="underline--magical">Regional Meeting Latinoamerica</span></h3>
-                <p>El 27 de marzo, CG y FUNDERMAX invitan a los matriculados del Consejo Profesional de Arquitectura y Urbanismo (CPAU), a participar de la conferencia Lo Nuevo y lo Viejo, sobre las fachadas innovadoras en Latinoamérica. </p>
-              </div>
-              <div class="novedad" id="myBtn">
-                <img src="img/novedades/novedad6.jpg" alt="novedad" class="img-responsive">
-                <h3><span class="underline--magical">El desafío acustico del Teatro del Bicentenario</span></h3>
-                <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. La obra elegida para esa función especial fue Carmina Burana, interpretada por La Fura dels Baus. </p>
-              </div>
-              <div class="novedad" id="myBtn2">
-                <img src="img/novedades/novedad8.jpg" alt="novedad" class="img-responsive">
-                <a href="#" class="effect-shine"> <h3><span class="underline--magical">Creatividad para viviendas únicas</span></h3></a>
-                <p>La vivienda Flor de Lis ubicada en el Golf Pinamar, se destaca por su identidad moderna y distintiva. Los paneles metálicos de SCREENDOT fueron decisivos para lograr ese perfil.</p>
-              </div>
-              <div class="novedad" id="myBtn">
-                <img src="img/novedades/novedad7.jpg" alt="novedad" class="img-responsive">
-                <h3><span class="underline--magical">Arquitectura sustentable</span></h3>
-                <p>La aplicación de materiales y diseño de conciencia ambiental en obras de distintas escalas y usos es moneda corriente. Claves para atender esta exigencia del mercado.</p>
-              </div>
-              <div class="novedad" id="myBtn">
-                <img src="img/novedades/novedad9.jpg" alt="novedad" class="img-responsive">
-                <h3><span class="underline--magical">DOT BAIRES, 10 años de innovación</span></h3>
-                <p>Casi 10 años después de la construcción del DOT BAIRES, se sigue apreciando la integridad y resistencia de los paneles SWISSPEARL y ALPOLIC.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-
-    <img src="img/novedades/novedad6portada.jpg" alt="">
-    <p class="novedad-date">Octubre 2018</p>
-    <h3><span class="underline--magical">El desafío acustico del Teatro del Bicentenario</span></h3>
-
-        <p class="novedad-by">By CG Sociedad Anonima  </p>
-    <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. La obra elegida para esa función especial fue Carmina Burana, interpretada por La Fura dels Baus. La energía de la presentación emocionó a todos los presentes.
-La magnificencia del edificio, el orgullo local por el logro arquitectónico y la performance de los artistas dieron forma a una velada inolvidable, que marcó un hito en la escena cultural sanjuanina. La sala fue la gran protagonista de la noche. Y los factores de ese suceso se encuentran en la estética y la acústica de las paredes, escenario y palcos. Para ello, el aporte de CG durante la terminación del proyecto fue clave, ya que en el proceso de revestimiento de la sala se aplicaron las placas PLATTEN MAD. El Teatro del Bicentenario ratifica la capacidad de CG para resolver grandes obras con eficiencia y en los tiempos requeridos.
-Acerca de las características el proyecto, Noemí Bilinski, Gerenta General de CG, especifica: “El desafío era alcanzar un eficaz rendimiento sonoro. Y se logró a través de las placas PLATTEN MAD, que se complementan con paneles de lana acústicos en su interior, sin dejar de lado las terminaciones en madera natural que requería el proyectista”.
-Las placas PLATTEN MAD son de uso interior y se destacan por su flexibilidad y adaptabilidad, ya que permiten crear módulos especiales de grandes dimensiones o de formas irregulares. Su implementación representa un atributo diferencial de este proyecto, ya que se utilizaron sistemas de varas en color Noce Nero, que desarrollan un comportamiento acústico destacado.
-El modelo elegido fue Lamas PLATTEN, el panel acústico de PLATTEN. Está conformado por un alma de lana de vidrio de alta densidad, que acondiciona acústicamente los espacios. De esa manera evita las refracciones de ruidos no deseados y mejora la calidad acústica interna.
-Natalia Piorno estuvo a cargo del proyecto por parte de CG. Explica por qué se optó por este modelo, que se aplicó en muros interiores y frentes de palcos: “Tiene cualidades que lo hacen imprescindible para un teatro de este tipo. La terminación en madera y practicidad para la colocación representan beneficios tanto en la instancia de obra como durante la vida útil del edificio”.
-Por su parte, Marco Pasinato, uno de los arquitectos responsables del proyecto, detalla los motivos por los cuales PLATTEN era la mejor solución para la sala: “Las formas y la disposición de los elementos interiores y su materialidad están pensadas para garantizar una acústica de calidad en todos los espacios. El manejo de esas variables es la base de la potencia y la calidad del sonido.”
-Al repasar el listado de emprendimientos de gran magnitud que CG ha completado con éxito, Bilinkis concluye: “Con este tipo de proyectos, CG sigue presente en las grandes obras que dan forma a la arquitectura de nuestro país”.
-</p>
-  </div>
-
-</div>
 
 
 
 
   <!-- OBRAS-->
 
-  <section id="work">
+  <section id="obras">
 
     <div class="content-box">
       <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
@@ -241,72 +236,97 @@ Al repasar el listado de emprendimientos de gran magnitud que CG ha completado c
       <div class="container-fluid">
         <div class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
-          <div class="col-md-3 col-sm-4">
+          <div class="col-xs-6 col-sm-4 col-md-3 ">
             <div class="img-wrapper">
-                <a href="img/trabajoscg/trabajo1.jpg" title="Aeropuerto Argentina 2000">
-            <img src="img/trabajoscg/trabajo1.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/revestimientos/aeropuerto-plumerillo.html" title="Aeropuerto Plumerillo">
+                <img src="img/trabajoscg/trabajo1.jpg" alt="" class="img-responsive">
+
+                <div class="descripcion-obra">
+                  <p>Aeropuerto Plumerillo</p>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-4">
+          <div class="col-xs-6 col-sm-4 col-md-3 ">
             <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo2.jpg" title="La Caja Seguros">
-            <img src="img/trabajoscg/trabajo2.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/destacados/tarjeta-naranja.html" title="Tarjeta Naranja">
+                <img src="img/trabajoscg/trabajo2.jpg" alt="" class="img-responsive">
+
+                <div class="descripcion-obra">
+                  <p>Tarjeta Naranja</p>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-4">
+          <div class="col-xs-6 col-sm-4 col-md-3 ">
             <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo3.jpg" title="Casa Nordelta">
-            <img src="img/trabajoscg/trabajo3.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/destacados/casa-g.html" title="Casa G">
+                <img src="img/trabajoscg/trabajo3.jpg" alt="" class="img-responsive">
+                <div class="descripcion-obra">
+                  <p>Casa G</p>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-4">
+          <div class="col-xs-6 col-sm-4 col-md-3 ">
             <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo4.jpg" title="Concecionaria Nissan">
-            <img src="img/trabajoscg/trabajo4.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/revestimientos/teatro-colon-benavente.html" title="Teatro Colón">
+                <img src="img/trabajoscg/trabajo4.jpg" alt="" class="img-responsive">
+                <div class="descripcion-obra">
+                  <p>Teatro Colón</p>
+                </div>
+              </a>
             </div>
           </div>
-      <!-- NO ES NECESARIO AGREGAR OTRA ROW, AUTOMATICAMENTE AL NO ENTRAR EN LAS 12 COL, LAS AGREGA ABAJO. -->
-          <div class="col-md-3 col-sm-4">
+          <!-- NO ES NECESARIO AGREGAR OTRA ROW, AUTOMATICAMENTE AL NO ENTRAR EN LAS 12 COL, LAS AGREGA ABAJO. -->
+          <div class="col-xs-6 col-sm-4 col-md-3 ">
             <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo5.jpg" title="Trilenium Casino">
-            <img src="img/trabajoscg/trabajo5.jpg" alt="" class="img-responsive">
-          </a>
-            </div>
-          </div>
-
-
-
-          <div class="col-md-3 col-sm-4">
-            <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo6.jpg" title="Shopping DOT">
-            <img src="img/trabajoscg/trabajo6.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/destacados/plaza-galicia.html" title="Plaza Galicia">
+                <img src="img/trabajoscg/trabajo5.jpg" alt="" class="img-responsive">
+                <div class="descripcion-obra">
+                  <p>Plaza Galicia</p>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-4">
+
+
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo7.jpg" title="DER">
-            <img src="img/trabajoscg/trabajo7.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/revestimientos/dot-baires.html" title="Shopping DOT">
+                <img src="img/trabajoscg/trabajo6.jpg" alt="" class="img-responsive">
+                <div class="descripcion-obra">
+                  <p>Shopping DOT</p>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-4">
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <div class="img-wrapper">
-              <a href="img/trabajoscg/trabajo8.jpg" title="Auditorio">
-            <img src="img/trabajoscg/trabajo8.jpg" alt="" class="img-responsive">
-          </a>
+              <a href="obras/revestimientos/teatro-bicentenario-principal.html" title="Auditorio">
+                <img src="img/trabajoscg/trabajo8.jpg" alt="" class="img-responsive">
+                <div class="descripcion-obra">
+                  <p>Teatro Bicentenario</p>
+                </div>
+              </a>
             </div>
           </div>
 
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="img-wrapper">
+              <a href="obras/destacados/telefe.html" title="Telefé">
+                <img src="img/trabajoscg/trabajo7.jpg" alt="" class="img-responsive">
+                <div class="descripcion-obra">
+                  <p>Telefé</p>
+                </div>
+              </a>
+            </div>
+          </div>
 
 
         </div>
@@ -316,24 +336,354 @@ Al repasar el listado de emprendimientos de gran magnitud que CG ha completado c
     </div>
   </section>
 
-  <div id="obras-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-    <a class="btn btn-lg btn-general btn-blue" href="obras.html">Ver más Obras</a>
+  <div id="obras-btn" class="centrar-boton wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+    <a class="btn btn-lg btn-general btn-blue" href="obras/destacados.html">Ver más Obras</a>
   </div>
 
+  <!-- NOVEDADES-->
+
+  <section id="novedades">
+    <div class="content-box" id="content-color">
+      <div class=content-title content-title-white wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s"">
+      <h3>NOVEDADES.</h3>
+      <div class=" content-title-underline"></div>
+    </div>
+
+    <div class="container">
+      <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+        <div class="col-md-12">
+          <div id="novedades-list" class="owl-carousel owl-theme">
+            <div class="novedad" id="myBtn1">
+              <img src="img/novedades/novedad1.jpg" alt="novedad" class="img-responsive">
+              <h3> <span class="underline--magical">Fachadas de edificios. Tendencias y Capacitación</span></h3>
+              <p>El 27 de marzo, CG y FUNDERMAX invitan a los matriculados del Consejo Profesional de Arquitectura y Urbanismo (CPAU), a participar de la conferencia Lo Nuevo y lo Viejo, sobre las fachadas innovadoras en Latinoamérica. </p>
+            </div>
+            <div class="novedad" id="myBtn2">
+              <img src="img/novedades/novedad2.jpg" alt="novedad" class="img-responsive">
+              <h3><span class="underline--magical">El desafío acustico del Teatro del Bicentenario</span></h3>
+              <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. </p>
+            </div>
+            <div class="novedad" id="myBtn3">
+              <img src="img/novedades/novedad3.jpg" alt="novedad" class="img-responsive">
+              <h3><span class="underline--magical">Flor de Lis. Creatividad para viviendas únicas</span></h3>
+              <p>La vivienda Flor de Lis ubicada en el Golf Pinamar, se destaca por su identidad moderna y distintiva. Los paneles metálicos de SCREENDOT fueron decisivos para lograr ese perfil.</p>
+            </div>
+            <div class="novedad" id="myBtn4">
+              <img src="img/novedades/novedad4.jpg" alt="novedad" class="img-responsive">
+              <h3><span class="underline--magical">Arquitectura sustentable</span></h3>
+              <p>La aplicación de materiales y diseño de conciencia ambiental en obras de distintas escalas y usos es moneda corriente. Claves para atender esta exigencia del mercado.</p>
+            </div>
+            <div class="novedad" id="myBtn5">
+              <img src="img/novedades/novedad5.jpg" alt="novedad" class="img-responsive">
+              <h3><span class="underline--magical">SOLUCIONES ACÚSTICAS</span></h3>
+              <p>Para todo proyecto con necesidades acústicas, resulta clave definir qué materiales se utilizarán en la terminación. De acuerdo al perfil de la obra, varían los requerimientos de niveles de ruido y de campo sonoro.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- The Modal -->
+  <div id="myModal1" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content container">
+      <span class="close" id="mymodalclose1">&times;</span>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-modal-novedad" src="img/novedades/novedad1bis.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 modal-texto">
+
+
+          <p class="novedad-date">Octubre 2018</p>
+          <h3><span class="underline--magical">Fachadas de edificios. Tendencias y Capacitación</span></h3>
+          <p class="novedad-by">By CG Sociedad Anonima</p>
+          <p>A fines de marzo, y en el marco de sus iniciativas como referente de las principales tendencias del mercado de la arquitectura y la construcción, CG organizó y participó de dos eventos que hicieron foco en el desarrollo de fachadas.
+            El lunes 27, en el auditorio del Consejo Profesional de Arquitectura y Urbanismo (CPAU), CG-SA y FunderMax organizaron una jornada dedicada a profesionales matriculados.
+            Bajo el eje temático Lo Nuevo y lo Viejo, los participantes siguieron con atención la interesante conferencia denominada Fachadas Innovadoras en Latinoamérica, a cargo de Marc Cabedo.
+            Entre los puntos más importantes de la charla, se destacó el abordaje de las temáticas relacionadas con la eficiencia energética en los edificios y cómo lograr fachadas comprometidas con esta tendencia.
+            Los asistentes a la jornada tomaron nota y reflexionaron acerca de cuestiones clave como la legislación europea y los proyectos españoles de apoyo económico, que incluyen el otorgamiento de créditos para proyectos que permitan mejorar
+            las fachadas.
+            El objetivo de estas iniciativas es reducir el consumo de energía en el sector de la edificación, fomentando la mejora de la eficiencia energética de los edificios.
+            Capacitación en planta
+            Un día después, CG-SA y FunderMax organizaron en conjunto la jornada: “FunderMax Academy – Clínica de Sistemas de Fachadas Ventiladas”. El escenario del encuentro fue la planta de CG en Quilmes.
+            Entre los disertantes invitados se destacó la presencia de Sandra Lambiase de Isover Sustentable, y Alberto Chiavarini, de Dow Corning. También compartieron sus conocimientos José Luis Calleja y Marc Cabedo, de FunderMax.
+            Los representantes de FunderMax se enfocaron en conceptos relacionados con la importancia del trabajo en equipo durante la búsqueda de la solución óptima para cada fachada.
+            Se trata de un proceso que demanda una sincronización de las partes integrantes de la fachada: los anclajes, la perfilería y la lana de vidrio, entre otros. Y para ello resulta esencial que los sistemas de colocación estén integrados.
+            Otros temas abordados incluyeron la puesta en práctica de las mejores soluciones para la fachada. Luego los participantes asistieron a muestras de los sistemas de montaje de CG, y finalmente recibieron diplomas en reconocimiento por su
+            participación.
+          </p>
+
+          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content container">
+      <span class="close" id="mymodalclose2">&times;</span>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-modal-novedad" src="img/novedades/novedad2bis.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 modal-texto">
+          <p class="novedad-date">Octubre 2018</p>
+          <h3><span class="underline--magical">El desafío acústico del Teatro Bicentenario.</span></h3>
+
+          <p class="novedad-by">By CG Sociedad Anonima</p>
+          <p>El 21 de octubre de 2016, en San Juan, se inauguró el Teatro del Bicentenario, el polo cultural más importante y vanguardista de la provincia. La obra elegida para esa función especial fue Carmina Burana, interpretada por La Fura dels
+            Baus. La energía de la presentación emocionó a todos los presentes.
+            La magnificencia del edificio, el orgullo local por el logro arquitectónico y la performance de los artistas dieron forma a una velada inolvidable, que marcó un hito en la escena cultural sanjuanina. La sala fue la gran protagonista de
+            la noche. Y los factores de ese suceso se encuentran en la estética y la acústica de las paredes, escenario y palcos. Para ello, el aporte de CG durante la terminación del proyecto fue clave, ya que en el proceso de revestimiento de la
+            sala se aplicaron las placas PLATTEN MAD. El Teatro del Bicentenario ratifica la capacidad de CG para resolver grandes obras con eficiencia y en los tiempos requeridos.
+            Acerca de las características el proyecto, Noemí Bilinski, Gerenta General de CG, especifica: “El desafío era alcanzar un eficaz rendimiento sonoro. Y se logró a través de las placas PLATTEN MAD, que se complementan con paneles de lana
+            acústicos en su interior, sin dejar de lado las terminaciones en madera natural que requería el proyectista”.
+            Las placas PLATTEN MAD son de uso interior y se destacan por su flexibilidad y adaptabilidad, ya que permiten crear módulos especiales de grandes dimensiones o de formas irregulares. Su implementación representa un atributo diferencial
+            de este proyecto, ya que se utilizaron sistemas de varas en color Noce Nero, que desarrollan un comportamiento acústico destacado.
+            El modelo elegido fue Lamas PLATTEN, el panel acústico de PLATTEN. Está conformado por un alma de lana de vidrio de alta densidad, que acondiciona acústicamente los espacios. De esa manera evita las refracciones de ruidos no deseados y
+            mejora la calidad acústica interna.
+            Natalia Piorno estuvo a cargo del proyecto por parte de CG. Explica por qué se optó por este modelo, que se aplicó en muros interiores y frentes de palcos: “Tiene cualidades que lo hacen imprescindible para un teatro de este tipo. La
+            terminación en madera y practicidad para la colocación representan beneficios tanto en la instancia de obra como durante la vida útil del edificio”.
+            Por su parte, Marco Pasinato, uno de los arquitectos responsables del proyecto, detalla los motivos por los cuales PLATTEN era la mejor solución para la sala: “Las formas y la disposición de los elementos interiores y su materialidad
+            están pensadas para garantizar una acústica de calidad en todos los espacios. El manejo de esas variables es la base de la potencia y la calidad del sonido.”
+            Al repasar el listado de emprendimientos de gran magnitud que CG ha completado con éxito, Bilinkis concluye: “Con este tipo de proyectos, CG sigue presente en las grandes obras que dan forma a la arquitectura de nuestro país”.
+          </p>
+
+          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal3" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content container">
+      <span class="close" id="mymodalclose3">&times;</span>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-modal-novedad" src="img/novedades/novedad3bis.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 modal-texto">
+
+          <p class="novedad-date">Octubre 2018</p>
+          <h3><span class="underline--magical">Flor de Lis.Creatividad para viviendas únicas.</span></h3>
+
+          <p class="novedad-by">By CG Sociedad Anonima</p>
+          <p>En el Golf Pinamar, entre los espacios verdes y los bosques de pinos asoma Flor de Lis, una vivienda que se integra al paisaje en perfecta armonía con los elementos visuales que lo componen.
+            Además de destacarse por las cualidades del diseño, exhibe un perfil cálido y singular, que le da una identidad única. Esta impronta se debe en gran parte a la aplicación del sistema SCREENDOT de la línea de revestimientos SKINWALL.
+            El sistema está formado por paneles metálicos con juntas abiertas, que para este proyecto se fabricaron en acero Cortén, material que resalta el paso del tiempo por medio de la oxidación, un atributo visual clave en Flor de Lis.
+            Acerca de las virtudes de este producto, Noemí Bilinksi, Gerenta General de CG, detalla:
+            “Hace un tiempo el sistema SCREENDOT se utilizaba sólo en grandes proyectos y edificios. Luego empezamos a implementarlo en casas privadas porque da muy buenos resultados. En este caso, el oxidado del acero Cortén reviste a la vivienda
+            de un look moderno y distintivo”.
+            <br><br>
+
+            <b>Los desafíos de Flor de Lis</b>
+
+            <br><br>
+            “Se trata de la reinterpretación de un proyecto de ampliación que no se había concretado”, aclara Silvina Zubiarrain, responsable del estudio a cargo de la obra. El desafío era generar una propuesta que uniera la casa existente con la
+            ampliación, para lograr una estética que las integrara.
+            Con un frente que mide 70 metros, las casas quedaban inconexas, aisladas una de la otra. Por eso se decidió crear tres recorridos de agua que nacen en distintos puntos del exterior y terminan uniéndose. De esa manera generan un hilo
+            conductor que comunica ambas casas.
+            Por otro lado, si bien la participación del exterior y el jardín son muy importantes en el concepto integral, estas zonas se complementan con la aplicación del SCREENDOT y el acero Cortén en las paredes que recubren la estructura.
+            “Desde el principio, la búsqueda apuntaba a crear algo innovador. Para eso necesitábamos un elemento que uniera el proyecto. Por su versatilidad, estos paneles metálicos resultaron la solución más adecuada. Son novedosos, diferentes, con
+            un color muy definido. De esa manera nos facilitaron las posibilidades de diseño”, detalla Zubiarrain.
+            Como balance de los resultados obtenidos en el proyecto, Noemí Bilinski concluye: “Es importante para CG incrementar la presencia en este sector y no sólo en los proyectos a gran escala. Además de favorecer la innovación en el diseño,
+            representa un mercado en expansión”.
+            PLATTEN y ACUSLINE en el microcine
+            Un elemento extra fue el interior del microcine. “Para lograr el efecto deseado de armonía acústica y estética, los responsables del proyecto evaluaron dos variantes de materiales acústicos: PLATTEN Oxichrome y ACUSLINE Trama. Nuestra
+            propuesta fue intercalar los paneles, y dio los resultados esperados”, explica Paz Holtz, quien representó a CG en el desarrollo del proyecto.
+          </p>
+
+          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal4" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content container">
+      <span class="close" id="mymodalclose4">&times;</span>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-modal-novedad" src="img/novedades/novedad4bis.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 modal-texto">
+
+          <p class="novedad-date">Octubre 2018</p>
+          <h3><span class="underline--magical">Arquitectura Sustentable</span></h3>
+
+          <p class="novedad-by">By CG Sociedad Anonima</p>
+          <p>Hace unos meses, Tesla presentó un sistema de techo solar para viviendas que no se distingue de un techo tradicional. Esta innovación permite graficar que la cultura sustentable ya no puede separarse de la tecnología y los conceptos
+            aplicados a la arquitectura.
+            Otro ejemplo son las leyes o normativas sobre “techos verdes”, que exigen que las terrazas de los edificios tengan superficies con presencia de naturaleza. Alcanza tanto a edificaciones residenciales como industriales.
+            Si bien estas regulaciones ya se han promulgado en ciudades como París y Copenhague, en Argentina también existen casos de aplicación en lugares como la Ciudad Autónoma de Buenos Aires (Ley de Techos o Terrazas Verdes N°4428, de 2012), y
+            Córdoba (aprobada en 2016).
+            Los techos verdes contribuyen a reducir la contaminación atmosférica y el efecto de las islas de calor, o las zonas en donde hay altas temperaturas. Con estas iniciativas, las ciudades buscan incorporar la sustentabilidad como un valor
+            inherente a su paisaje urbano.
+            En Estocolmo, Suecia, el barrio Hammarby Sjöstad estaba muy contaminado por la actividad industrial y fue abandonado. Hoy es el primer barrio sustentable de la ciudad.
+            Esto se debe a que arquitectos, ingenieros y urbanistas convocados por el municipio local, trabajaron en un “circuito cerrado de metabolismo urbano”. El proyecto implicaba construir sistemas sustentables para el agua, la energía y los
+            residuos.
+            Además, cada departamento cuenta con un equipo que transforma las aguas residuales en biogás y energía térmica que se usa en la calefacción pública y como combustible para el transporte de pasajeros. Y los residuos sólidos de este
+            proceso se convierten en abono.
+            <br><br>
+            <b>Atributo diferencial</b>
+            <br><br>
+            La arquitectura sustentable no sólo permite mejorar la calidad de vida de las personas o fortalecer el perfil saludable de una comunidad. También constituye un atributo diferencial en la estrategia de negocios de desarrolladores,
+            constructores y arquitectos.
+            Debe posicionarse como un elemento destacado de sus propuestas, ya que resulta decisivo en la toma de decisiones del cliente (y del consumidor, que demuestra una creciente propensión a pagar más por productos o servicios de empresas que
+            estén comprometidas con la sustentabilidad).
+            Además de la selección de los materiales y las técnicas de aplicación, resulta clave diseñar de forma sustentable. Así se crean proyectos que se destacan por una relación positiva y duradera entre viabilidad económica y sensibilidad
+            ambiental.
+            En CG acompañamos a los proyectos que se ubican a la vanguardia del sector, ya sean grandes edificaciones o viviendas particulares. “Por eso nuestros servicios incluyen soluciones para obras cuyo enfoque privilegia la integración de la
+            sustentabilidad con necesidades específicas”, concluye Noemí Bilinski, Presidenta de CG.</p>
+
+          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal5" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content container">
+      <span class="close" id="mymodalclose5">&times;</span>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-modal-novedad" src="img/novedades/novedad5bis.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 modal-texto">
+          <p class="novedad-date">Octubre 2018</p>
+          <h3><span class="underline--magical">“SI NO PREVEMOS SOLUCIONES ACÚSTICAS, LOS PROYECTOS TERMINAN MAL”</span></h3>
+
+          <p class="novedad-by">By CG Sociedad Anonima</p>
+          <p>
+            Los primos Daniel y Marcelo Ottobre, del estudio Ottobre y Ottobre, son responsables de las soluciones acústicas para varios de los proyectos más importantes de la Argentina. Y conocen los productos de CG a partir de colaboraciones en
+            distintas obras.
+            A través de su trayectoria, son testigos del crecimiento de ese segmento de mercado desde hace varias décadas. Cuando comenzaron, los trabajos eran muy específicos, como salas de conferencias y estudios de grabación, cine, radio o TV.
+            Hoy, como asesores en acústica, el espectro de sus proyectos abarca restaurantes, salones de baile, lugares de reunión, áreas de trabajo, oficinas, negocios que dan a la calle y depósitos, entre otras instalaciones.
+            “Todos los ámbitos de trabajo requieren prestar atención al tema acústico. Está demostrado que el ruido genera una merma en el rendimiento laboral, ya que disminuye la capacidad de concentración y perjudica la salud”, grafica Daniel
+            Ottobre.
+            <br><br>
+            <b>Beneficios del confort acústico</b>
+            <br><br>
+            “La absorción, tanto de superficies porosas como perforadas, es la única manera de obtener confort acústico”, subraya desde su vasta experiencia. Y asegura que los mejores resultados se logran con “un material que sea seguro y que
+            funcione como absorbente. El catálogo de CG ofrece esos materiales, tanto para el aislamiento como para el acondicionamiento interior”.
+            Detalla que “los materiales de CG permiten hacer un tratamiento completo del campo acústico de un recinto. Pueden absorben las altas, medias y bajas frecuencias. Por ejemplo, las placas sin perforar, más finas o más gruesas, absorben las
+            bajas frecuencias”.
+            <br><br>
+            <b>Hacia una acústica exitosa</b>
+            <br><br>
+            Para todo proyecto con necesidades acústicas, resulta clave definir qué materiales se utilizarán en la terminación. De acuerdo al perfil de la obra, varían los requerimientos de niveles de ruido y de campo sonoro.
+            “Primero hay que conseguir un nivel de ruido determinado, que se logra mediante el aislamiento del local y el manejo del ruido del aire acondicionado, por ejemplo,” explica Daniel Ottobre.
+            El paso siguiente es ver cómo se consigue el adecuado tiempo de reverberación en el local. En general se recurre a materiales fonoabsorbentes, en diferentes grados y según qué parte del sonido absorben.
+            En cada proyecto hay que considerar dos aspectos básicos en relación con la acústica: por un lado, el aislamiento y ruido de fondo. Por el otro, el campo sonoro requerido en el interior del recinto.
+            Ottobre ejemplifica con un restaurante: “Necesita materiales durables, que se puedan limpiar y que sean estéticamente agradables. Lo ideal son los absorbentes, tanto perforados como ranurados, específicos para el rango de la voz. En
+            bares o restaurantes donde la gente se queja del ruido porque no puede conversar, cualquiera de los cielorrasos de CG lo soluciona”.
+            Otros proyectos requieren mayor superficie de material absorbente. Ottobre explica que “cuando un espacio grande se llena de gente y todos hablan, no se entiende nada. Pero los revestimientos acústicos eliminan el ruido o lo reducen
+            notablemente, y las palabras vuelven a entenderse. Esto pasa porque están compuestos por elementos capaces de absorber la energía que se genera en el ambiente”.
+            <br><br>
+            <b>El mercado hoy</b>
+            <br><br>
+            Al analizar las tendencias en la implementación de soluciones acústicas, Ottobre destaca que en relación a otras épocas “hay bastante más toma de conciencia de los beneficios que conlleva. En el exterior ya es algo estándar”.
+            Por lo general, los edificios de oficinas lo tienen incorporado entre sus requisitos básicos. “Sobre todo cuando se trata de empresas extranjeras que instalan operaciones en el país”.
+            Ottobre advierte que sin un buen grado de absorción, no habrá solución para los inconvenientes acústicos. “No hay milagro. Por eso hay que anticiparse y saber elegir el material adecuado al momento de diseñar el proyecto. No existe otro
+            camino para resolver el problema del ruido”.
+            Acerca de la convivencia de las soluciones acústicas con el diseño y la estética de los proyectos, subraya: “Existe una tendencia minimalista que privilegia materiales en estado puro, como hormigón, vidrio, etc. Esto genera una ventaja,
+            ya que si queremos conseguir absorción con un material blanco, perforado, ubicado en un lugar alto, podemos utilizar placas de PLATTEN MAD de CG, que se percibe casi como una superficie lisa”.
+            Destaca las cualidades estéticas de los productos de CG porque “permiten adecuarte a un requerimiento formal, y obtener resultados acústicos. Por ejemplo, la chapa perforada tiene un perfil tecnológico que hoy se usa mucho”.
+            <br><br>
+            <b>Anticipar las soluciones</b>
+            <br><br>
+            Ottobre aconseja tomar conciencia del problema acústico para todo tipo de emprendimientos: “No se restringe a cine, teatro o estudios. Las ciudades están rodeadas de ruido. Hay que protegerse, porque es perjudicial para la salud. Y si no
+            incluimos las soluciones acústicas al momento de diseñar, los proyectos terminan mal”.
+            Su trayectoria le demostró que “el ruido afecta mucho a la gente. Y cuando lo resolvés, te agradecen enfáticamente, porque les genera un cambio tanto en su vida como en la actividad cotidiana”.
+
+            <p>
+
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+              </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
   <!-- CLIENTES-->
 
-<section id="clientes">
-  <div class="content-box">
-    <div class=content-title content-title-white wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s"">
+  <section id="clientes">
+    <div class="content-box">
+      <div class=content-title content-title-white wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s"">
       <h3>CLIENTES.</h3>
-      <div class="content-title-underline"></div>
+      <div class=" content-title-underline"></div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="col-md-12">
           <div id="clientes-list" class="owl-carousel owl-theme">
@@ -380,16 +730,92 @@ Al repasar el listado de emprendimientos de gran magnitud que CG ha completado c
               <img src="img/clientes/cliente15.jpg" alt="cliente" class="img-responsive">
             </div>
 
-
           </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+        <div class="col-md-2 col-sm-3 col-xs-4  cliente">
+          <img src="img/clientes/cliente1.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente2.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente3.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente4.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente5.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente6.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente7.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente8.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente9.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente10.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente11.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente12.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente13.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente15.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente16.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente17.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente18.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente19.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente20.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente21.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente22.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente23.jpg" alt="cliente" class="img-responsive">
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-4 cliente">
+          <img src="img/clientes/cliente24.jpg" alt="cliente" class="img-responsive">
         </div>
 
       </div>
 
     </div>
 
-  </div>
-</section>
+
+
+
+    </div>
+  </section>
 
 
 
@@ -399,33 +825,32 @@ Al repasar el listado de emprendimientos de gran magnitud que CG ha completado c
   <!-- CONTACTO -->
 
 
-<footer id="contact">
+  <footer id="contact">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="row">
+      <div class="row">
 
-      <div class="col-md-6">
-        <div id="contact-left">
+        <div class="col-md-6">
+          <div id="contact-left">
             <img src="img/logos/logocg4.png" alt="" id="cg-footer-title"> <br><br>
-            <p>Somos lideres en materiales arquitectónicos. <strong>Innovamos.</strong>  </p>
+            <p id="cg-footer-frase">Somos lideres en materiales arquitectónicos. <strong>Innovamos.</strong> </p>
 
             <div id="contact-info">
               <address>
-                <strong>Showroom de ventas.</strong>
-                <p>Pje. Carabelas 265 (1009)  C.A.B.A. l Bs. As. l Argentina </p>
+                <strong>Showroom</strong>
+                <p>Pje. Carabelas 265 (1009) C.A.B.A. l Bs. As. l Argentina </p>
+                <p> <span>+5411 4328-7681 / 4543 / 3558</span></p>
               </address>
               <address>
-                <strong>Fábrica.</strong>
-                <p>Calle 830 Nº450 (1881) Quilmes O. l Bs. As. l  </p>
+                <strong>Fábrica</strong>
+                <p>Calle 830 Nº450 (1881) Quilmes O. l Bs. As. l </p>
+                <p><span>+5411 4250-7666</span></p>
               </address>
               <div class="phone-email">
                 <p>
-                    <strong>Teléfonos</strong> <br>
-                    <span>+5411 4328-7681 / 4543 / 3558 l <i>Ventas</i></span>
-                    <span>+5411 4250-7666 l <i>Fábrica</i> </span> <br><br>
-                    <strong>Email</strong> <br>
-                     <span>info@cg-sa.com</span>
+                  <strong>Email</strong> <br>
+                  <span>info@cg-sa.com</span>
                 </p>
               </div>
 
@@ -439,86 +864,86 @@ Al repasar el listado de emprendimientos de gran magnitud que CG ha completado c
               <li> <a href="#" class="social-icon icon-white"> <i class="fab fa-youtube"></i> </a> </li>
             </ul>
 
+          </div>
+
         </div>
 
+        <div class="col-md-6">
+          <div id="contact-right">
+            <h3>Contactanos</h3>
+
+            <form method="post" action="contacto.php">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="nombre" placeholder="Nombre">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="telefono" placeholder="Telefono">
+
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="E-mail">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="mensaje" placeholder="Mensaje" rows="12"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="text-center">
+                    <input class="btn btn-general  " type="submit" name="submit" value="Enviar">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-6">
-          <div id="contact-right">
-              <h3>Contactanos.</h3>
+    </div>
 
-              <form method="post" action="contacto.php">
-              									<div class="row">
-              										<div class="col-md-6">
-              											<div class="form-group">
-              												<input class="form-control" type="text" name="nombre" placeholder="Nombre">
-              												<p class="help-block text-danger"></p>
-              											</div>
-              										</div>
-              										<div class="col-md-6">
-              											<div class="form-group">
-              												<input class="form-control" type="text" name="telefono" placeholder="Telefono">
 
-              											</div>
-              										</div>
-                                  <div class="col-md-12">
-                                    <div class="form-group">
-                                      <input class="form-control" type="email" name="email" placeholder="E-mail">
-                                      <p class="help-block text-danger"></p>
-                                    </div>
-                                  </div>
-              										<div class="col-md-12">
-              											<div class="form-group">
-              												<textarea class="form-control" name="mensaje" placeholder="Mensaje" rows="12"></textarea>
-              											</div>
-              										</div>
-              										<div class="col-md-12">
-              											<div class="text-center">
-              												<input class="btn btn-general  " type="submit" name="submit"  value="Enviar">
-              											</div>
-              										</div>
-              									</div>
-              								</form>
+
+
+    <!-- div#footer-bottom>div.container>div.row>div.col-md-6{copyrights}+div.col-md-6{footer-menu}  CREADO CON EMMET-->
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="footer-copyrights">
+              <p>Copyrights &copy; 2018 Desarrollo SSPV</p>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs">
+            <div id="footer-menu">
+              <ul>
+                <li><a href="#home">Home</a>/</li>
+                <li><a href="#about">Nosotros</a>/</li>
+                <li><a href="#novedades">Novedades</a>/</li>
+                <li><a href="#work">Obras</a>/</li>
+                <li><a href="#clientes">Clientes</a>/</li>
+                <li><a href="#contact">Conctacto</a>/</li>
+              </ul>
             </div>
           </div>
         </div>
-
-    </div>
-
-
-
-
-<!-- div#footer-bottom>div.container>div.row>div.col-md-6{copyrights}+div.col-md-6{footer-menu}  CREADO CON EMMET-->
-<div id="footer-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div id="footer-copyrights">
-          <p>Copyrights &copy; 2018 Desarrollo SSPV</p>
-        </div>
-      </div>
-      <div class="col-md-6 hidden-sm hidden-xs">
-        <div id="footer-menu">
-          <ul>
-            <li><a href="#home">Home</a>/</li>
-            <li><a href="#about">Nosotros</a>/</li>
-            <li><a href="#novedades">Novedades</a>/</li>
-            <li><a href="#work">Obras</a>/</li>
-            <li><a href="#clientes">Clientes</a>/</li>
-            <li><a href="#contact">Conctacto</a>/</li>
-          </ul>
-        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll" role="button" title="home">
-  <i class="fas fa-angle-up"></i>
-</a>
+    <a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll" role="button" title="home">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
 
-</footer>
+  </footer>
 
 
 
@@ -532,6 +957,8 @@ Al repasar el listado de emprendimientos de gran magnitud que CG ha completado c
   <script src="js/counter/jquery.waypoints.min.js"></script>
   <script src="js/counter/jquery.counterup.min.js"></script>
   <script src="js/easing/jquery.easing.1.3.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHWms_ry383YALvBF0Oox5XGRuPwrWYnM&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXHCfKfqiYAC9whHvIaUNJI6fn0M6vguY&callback=initMap" type="text/javascript"></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bf420b7c57ad1eb"></script>
   <script src="js/custom.js"></script>
 </body>

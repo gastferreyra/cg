@@ -26,18 +26,21 @@ p {
 ===========================================================================*/
 
 
-#home-productos {
-  height: 1280px;
-}
+  #home-productos {
+    height: 1600px;
+  }
 
-#home-cover {
-  height: 100%;
-background-image: url(../img/portadas/otra2bis2.jpg);
-  background-repeat: repeat;
-  display: flex;
-  align-items: stretch;
-  perspective: 1500px;
-}
+
+  #home-cover {
+    height: 100%;
+    background-image:linear-gradient(to top, #ffffff, #bababa, transparent), url(../img/portadas/portada3byn.jpg);
+    background-repeat: repeat;
+    display: flex;
+    align-items: stretch;
+    perspective: 1500px;
+  }
+
+
 
 #home-content-box {
   width: 100%;
@@ -113,13 +116,18 @@ background-image: url(../img/portadas/otra2bis2.jpg);
                                   BUTTONS
 ===========================================================================*/
 
+/*=============================================================================
+                                  BUTTONS
+===========================================================================*/
+
 .btn-general {
-  border-width: 5px;
+  border-width: 2px;
   border-radius: 0;
   padding: 12px 26px 12px 26px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .btn-white {
@@ -127,20 +135,35 @@ background-image: url(../img/portadas/otra2bis2.jpg);
   color: #fff;
 }
 
+
+
 .btn-white:hover, .btn-white:focus {
   background-color: #fff;
   color: #41464b;
 }
 
 .btn-blue {
-  border-color: #d5c84b;
-  color: #707270;
+  border-color: rgb(46, 46, 46);
+  color: rgb(46, 46, 46);
 }
 
 .btn-blue:hover, .btn-blue:focus {
-  background-color: #d5c84b;
+  transition: .09s ease;
+  background-color: rgb(232, 222, 88);
   color: #fff;
+  border-color: rgb(232, 222, 88);
 }
+
+.btn-back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 22px;
+  padding: 3px 15px;
+  border-radius: 0;
+  display: none;
+}
+
 
 
 #ficha-btn{
@@ -201,7 +224,7 @@ background-image: url(../img/portadas/otra2bis2.jpg);
 .cg-top-nav{
   background: rgb(255, 254, 254);
   padding: 7px 0;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 header .cg-nav-wrapper{
@@ -219,7 +242,7 @@ header .navbar-nav > li > a{
   font-weight: 700;
 }
 
-header.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+header .navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
   background: none;
 }
 
@@ -296,20 +319,21 @@ header nav ul li {
   display:inline-block;
 	}
 
-header nav li a.menu-item {
+header nav li a.menu-item  {
   color: white;
 }
 
 header nav a {
 	display:block;
-	padding:0 10px;
+	padding:0px;
 	color:black;
 	font-size:15px;
-	line-height: 60px;
+	line-height: 50px;
   text-decoration:none;
 }
 
 header nav a.menu-item:hover {
+  transition: .8s ease-out;
   background-color: white;
   color: black;
 }
@@ -330,8 +354,8 @@ header nav ul ul div li {
 
 header nav ul li:hover > div ul {
   display: block;
-  height: 347px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 header nav ul li:hover ul li{
@@ -339,9 +363,9 @@ header nav ul li:hover ul li{
 }
 
 .a-products{
-  color: rgb(39, 40, 41);
+  color: #67696a;
   font-weight: lighter;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 13px;
 }
@@ -357,7 +381,7 @@ header nav ul li:hover {
   background-color: white;
 }
 
-header nav ul li:hover a.menu-item{
+header nav ul li:hover a.menu-item {
   color: rgb(70,64,64) !important;
 }
 
@@ -365,10 +389,8 @@ header nav ul ul li {
 width: 170px;
 float: none;
 position: relative;
-padding-bottom: 13px;
 margin-left: 29px;
-bottom: -27px;
-border-left: 4px solid rgb(232, 222, 88);
+bottom: -26px;
 }
 
 header nav ul li div {
@@ -387,37 +409,37 @@ header nav ul li:hover div {
 
 header nav ul ul {
   display: inline-block;
-  width: 794px;
+  width: 700px;
   left: -311px;
 
 }
 
 header nav ul li img {
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 200px;
   z-index: 2;
   position: absolute;
-  right: -581px;
-  top: -2px;
+  right: -481px;
+  top: -1px;
   object-fit: contain;
+  filter: brightness(.8);
 }
 
 header nav ul li img.img-2 {
-  top: -75px;
+  top: -51px;
 }
 
 header nav ul li img.img-3 {
-  top: -148px;
+  top: -101px;
 }
 
 header nav ul li img.img-4 {
-  top: -221px;
+  top: -151px;
 }
 
 header nav ul li img.img-default{
   top: 67px;
   left: -31px;
-
   z-index: 1;
 }
 
@@ -432,6 +454,116 @@ header .li-img:hover img {
   z-index: 999;
 }
 
+
+/* /Mobile Nav/ */
+.navMobileWrapper{
+width: 100%;
+height: 10vh;
+background-color: rgba(0, 0, 0, 0.71);
+padding: 2vw 4vw;
+z-index: 100;
+color: black;
+position: fixed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+.navMobileBars{
+position: fixed;
+right: 2.5vw;
+}
+
+
+.navMobile{
+width: 100vw;
+height: 100vh;
+z-index: 1;
+background-color: rgba(0, 0, 0, 0.71);
+position: fixed;
+transition: all 0.8s;
+top: 10vh;
+left: 100vw;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+border-top: 1px solid rgba(255, 255, 255, 0.49);
+}
+
+.navMobile a{
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 2rem;
+text-decoration: none;
+font-weight: 900;
+color: #fff;
+letter-spacing: 1.5px;
+}
+
+.navMobileProductos{
+position: relative;
+}
+
+.navMobileProductos span{
+content: '>';
+transition: all 0.8s;
+transform: rotate(90deg);
+font-size: 2rem;
+position: absolute;
+top: .5vh;
+left: 99%;
+}
+
+.navMobileProductos-options{
+width: 100%;
+overflow: hidden;
+height: 0;
+transition: all 0.8s;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+}
+
+.navMobileProductos-options a{
+font-size: 1.6rem;
+font-weight: lighter;
+}
+
+.hamburger .line{
+  width: 30px;
+  height: 3px;
+  background-color: #ffff;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+  -ms-transform: translateY(-9px) rotate(-45deg);
+  -o-transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
+}
 
 
 /*=============================================================================
@@ -448,7 +580,7 @@ img.logocg1{
 
 img.logocg2 {
   opacity: 0;
-  width: 90%;
+  width: 80%;
   margin-top: -72px;
   position: relative;
 }
@@ -458,17 +590,14 @@ img.logocg2 {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: rgb(125, 125, 121);
-    color: #fff;
+    min-width: 300px;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.92);
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
     font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
     color: #41464B;
-    background-color: #333333;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2), 0 6px 0 0 rgba(0, 0, 0, 0.19);
     margin-top: 180px;
     margin-right: 0;
     margin-left: 60px;
@@ -476,15 +605,21 @@ img.logocg2 {
 }
 
 #sidebar a{
-  color: #fff;
-  font-size: 25px;
-  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #262626;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+#sidebar a:hover{
+  text-decoration: none;
 }
 
 #sidebar h3{
-  color: white;
-  font-size: 25px;
+  color: #262626;
+  font-size: 20px;
   font-weight: 900;
+  text-align: center;
 }
 
 #sidebar.active {
@@ -494,12 +629,12 @@ img.logocg2 {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #333333;
+    border-bottom: 1px solid #fff;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #2c2c2d;
+    border-bottom: 1px solid #fff;
 }
 
 #sidebar ul p {
@@ -509,12 +644,13 @@ img.logocg2 {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    margin-left: 1em;
+    font-size: 1.2em;
     display: block;
+    text-decoration: none;
 }
 #sidebar ul li a:hover {
-    color: #333333;
-    background: #fff;
+  font-weight: 400;
 }
 
 #sidebar ul li a:hover i{
@@ -523,8 +659,7 @@ img.logocg2 {
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #333333;
-    background: rgb(125, 125, 121);
+    font-weight: 400;
 }
 
 
@@ -534,7 +669,8 @@ img.logocg2 {
 
 
 #sidebar i{
-  color: #ffffff;
+  color: #333333;
+
 }
 
 #sidebar li:nth-child(1) i{
@@ -542,16 +678,13 @@ img.logocg2 {
 }
 
 #sidebar li:nth-child(3) i{
-  margin-left: 100px;
+  margin-left: 105px;
 }
-
-
 
 
 #sidebar ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #c2bfbf;
     color: #41464B;
 }
 
@@ -569,13 +702,13 @@ img.logocg2 {
 
 #sidebar a.download {
     background: #41464B;
+    color: #fff;
 }
 
 
 #sidebar a.article, a.article:hover {
     color: #d1cc58 !important;
 }
-
 
 
 
@@ -586,7 +719,6 @@ img.logocg2 {
     min-height: 100vh;
     margin: 180px 60px 0 0;
     transition: all 0.3s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(244, 244, 244, 0.86);
 
 }
@@ -597,43 +729,67 @@ img.logocg2 {
                                   PORTADA (Producto)
 ===========================================================================*/
 
-
 #portada{
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 4%;
 }
+
+
 .portada-producto{
   position: relative;
   text-align: center;
   margin: 0;
-
-
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.portada-producto img{
+
+.portada-producto-foto{
+  position: relative;
   width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#portada-producto-sombra{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
 }
 
 
-.caption{
-  position: absolute;
-  bottom: 18px;
-  padding: 20px;
 
+
+
+
+
+.caption {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  margin-top: 4%;
 }
 
 .caption h3{
-  font-size: 45px;
+  font-size: 2.8em;
   font-weight: 700;
-  color: white;
+  color:rgba(255, 255, 255, 0.89);
+  letter-spacing: 2px;
+  align-self: center;
 }
 
 
 .caption p{
-  color: white;
-  margin-top: 20px;
+  color:rgba(255, 255, 255, 0.89);
+  letter-spacing: 1px;
+  font-size: 1em;
+  margin-top: 2%;
 }
-
 
 
 .producto-descripcion h3{
@@ -649,7 +805,7 @@ img.logocg2 {
 }
 
 #descripcion{
-  margin: 50px 0 50px 0;
+  margin: 20px 0 50px 0;
 }
 
 
@@ -658,6 +814,7 @@ img.logocg2 {
   padding-left: 0;
   padding-right: 0;
 }
+
 
 .img-wrapper {
   overflow: hidden;
@@ -683,8 +840,10 @@ img.logocg2 {
     letter-spacing: 0.8px;
     line-height: 30px;
     font-weight: lighter;
-
+    color: #64707b;
 }
+
+
 /*=============================================================================
                                   SOCIAL
 ===========================================================================*/
@@ -739,6 +898,7 @@ footer{
 
 #contact-left p{
   color: #fff;
+  font-size: 14px!important;
   margin-bottom: 30px;
 }
 

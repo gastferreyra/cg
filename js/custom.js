@@ -20,42 +20,31 @@ $('#loader').delay(3000).queue(function(){
 /*===========================================================================
                                 OBRAS
 ===========================================================================*/
-$(function() {
-  $("#work").magnificPopup({
-    delegate: 'a', // child items selector, by clicking on it popup will open
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-});
-
-
-
-// $(document).load(function(){
-//
-//   var $container = $(".masonry-container");
-//   $container.Imagesloaded(function(){
-//     $container.masonry({
-//       columnWidth: ".grid-sizer",
-//       itemSelector: ".item"
-//     });
+// $(function() {
+//   $("#obras").magnificPopup({
+//     delegate: 'a', // child items selector, by clicking on it popup will open
+//     type: 'image',
+//     gallery: {
+//       enabled: true
+//     }
 //   });
 // });
+
+
 
 /*===========================================================================
                                 IMAGEN PRODUCTOS
 ===========================================================================*/
-
-$(function() {
-  $("#img-producto").magnificPopup({
-    delegate: 'a', // child items selector, by clicking on it popup will open
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-});
+//
+// $(function() {
+//   $("#img-producto").magnificPopup({
+//     delegate: 'a', // child items selector, by clicking on it popup will open
+//     type: 'image',
+//     gallery: {
+//       enabled: true
+//     }
+//   });
+// });
 
 
 
@@ -75,34 +64,37 @@ $(function() {
 /*===========================================================================
                                 CLIENTES
 ===========================================================================*/
-$(function() {
-  $("#clientes-list").owlCarousel({
-    items: 6,
-    autoplay: true,
-    smartSpeed: 700,
-    loop: true,
-    autoplayHoverPause: true,
-    responsive : {
-            // breakpoint from 0 up
-            0 : {
-                items:1
-            },
-            // breakpoint from 480 up
-            480 : {
-                items:3
-            },
-
-            // breakpoint from 768 up
-            768 : {
-                items:5
-            },
-
-            992 : {
-              items: 6
-            }
-          }
-  });
-});
+// $(function() {
+//   $("#clientes-list").owlCarousel({
+//     items: 6,
+//     margin:40,
+//     autoplay: true,
+//     smartSpeed: 900,
+//     loop: true,
+//     dots:false,
+//     autoplayHoverPause: true,
+//     responsive : {
+//             // breakpoint from 0 up
+//             0 : {
+//                 items:2
+//
+//             },
+//             // breakpoint from 480 up
+//             480 : {
+//                 items:3
+//             },
+//
+//             // breakpoint from 768 up
+//             768 : {
+//                 items:5
+//             },
+//
+//             992 : {
+//               items: 6
+//             }
+//           }
+//   });
+// });
 
 /*===========================================================================
                                 NOVEDADES
@@ -119,12 +111,10 @@ $(function() {
       0 : {
           items:1
       },
-      // breakpoint from 480 up
-      480 : {
-          items:2
-      },
+
+
       // breakpoint from 768 up
-      620 : {
+      480 : {
           items:2
       },
 
@@ -168,6 +158,8 @@ $(function() {
  /*===========================================================================
                                  NAVIGATION (Productos)
  ===========================================================================*/
+
+
  $(function() {
   $(window).scroll(function(){
     if ($(this).scrollTop() <50 ) {
@@ -177,7 +169,7 @@ $(function() {
       $("img.logocg1").css('opacity', '1');
       $("img.logocg2").css('opacity', '0');
       $("#back-to-top").fadeOut();
-       $("nav li a.menu-item").removeClass("cg-nav-hov");
+      $("nav li a.menu-item").removeClass("cg-nav-hov");
     } else {
       /* Si es mayor, mostrar navigation bar */
       $("nav").addClass("cg-top-nav");
@@ -190,8 +182,63 @@ $(function() {
 
     }
     });
+
+    $('.navProductos').on('click',function(){
+        window.location.replace("productos/revestimientos.html");
+    });
+
   });
 
+
+
+  /*===========================================================================
+                                  NAV MENU PARA MOBILE
+  ===========================================================================*/
+  var navState = 'off';
+  $('.navMobileBars').on('click',function(){
+      if(navState == 'off'){
+          $('.navMobile').css({
+              'left':'0'
+          });
+          navState = 'on';
+      }
+      else{
+          $('.navMobile').css({
+              'left':'100vw'
+          });
+          navState = 'off';
+      }
+  });
+
+  $('.navMobileScroll').on('click',function(){
+      $('.navMobile').css({
+          'left':'100vw'
+      });
+      navState = 'off';
+  });
+
+  var menuState = 'off';
+  $('.navMobileProductos').on('click',function(){
+      if(menuState == 'off'){
+          $('.navMobileProductos-options').css({
+              'height':'50vh'
+          });
+          $('.navMobileProductos span').css({
+              'transform': 'rotate(-90deg)'
+          });
+          menuState = 'on';
+      }
+      else{
+          $('.navMobileProductos-options').css({
+              'height':'0'
+          });
+          $('.navMobileProductos span').css({
+              'transform': 'rotate(90deg)'
+          });
+          menuState = 'off';
+      }
+
+  });
 
 /* Smooth Scrolling*/
 
@@ -209,6 +256,26 @@ $(function() {
 
     });
   });
+
+
+  /* Smooth Scrolling*/
+
+  $(function() {
+  /* Selecciona TODOS los a con la clase smooth-scroll */
+    $("a.smooth-scroll2").click(function(event){
+  /*Previene de usar la default de cuando se clickea ir directamente a la url */
+    event.preventDefault();
+    /*Toma o devuelve section id si son clickeados */
+    var section = $(this).attr("href");
+
+    $('html,body').animate({
+      scrollTop: $(section).offset().top - 64
+    }, 1250, "easeInOutExpo");  /*Efecto de easing.1.3.js*/
+
+      });
+    });
+
+
 
 
 
@@ -293,40 +360,115 @@ $(function() {
     ===========================================================================*/
 
 
-    // Get the modal
-    var modal = document.getElementById('myModal');
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    // Modal
+    var modal1 = document.getElementById('myModal1');
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var modal2 = document.getElementById('myModal2');
 
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
+    var modal3 = document.getElementById('myModal3');
+
+    var modal4 = document.getElementById('myModal4');
+
+    var modal5 = document.getElementById('myModal5');
+
+
+    // Boton
+    var btn1 = document.getElementById("myBtn1");
+
+    var btn2 = document.getElementById("myBtn2");
+
+    var btn3 = document.getElementById("myBtn3");
+
+    var btn4 = document.getElementById("myBtn4");
+
+    var btn5 = document.getElementById("myBtn5");
+
+
+
+    // Toma el <span> que contiene el modal
+    var span1 = document.getElementById("mymodalclose1");
+
+    var span2 = document.getElementById("mymodalclose2");
+
+    var span3 = document.getElementById("mymodalclose3");
+
+    var span4 = document.getElementById("mymodalclose4");
+
+    var span5 = document.getElementById("mymodalclose5");
+
+
+
+    // Cuando se clickea en el boton, se ingresa
+    btn1.onclick = function() {
+        modal1.style.display = "block";
     }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
+    // Cerrar en click en X
+    span1.onclick = function() {
+        modal1.style.display = "none";
     }
+
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+    }
+
+    // Cerrar en click en X
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+
+    btn3.onclick = function() {
+        modal3.style.display = "block";
+    }
+
+    // Cerrar en click en X
+    span3.onclick = function() {
+        modal3.style.display = "none";
+    }
+
+
+    btn4.onclick = function() {
+        modal4.style.display = "block";
+    }
+
+    // Cerrar en click en X
+    span4.onclick = function() {
+        modal4.style.display = "none";
+    }
+
+
+    btn5.onclick = function() {
+        modal5.style.display = "block";
+    }
+
+    // Cerrar en click en X
+    span5.onclick = function() {
+        modal5.style.display = "none";
+    }
+
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }   else if (event.target == modal2) {
+            modal2.style.display = "none";
+        }   else if (event.target == modal3) {
+            modal3.style.display = "none";
+        }  else if (event.target == modal4) {
+              modal4.style.display = "none";
+        }  else if (event.target == modal5) {
+              modal5.style.display = "none";
+                    }
+
     }
 
 
 
-    /*===========================================================================
-                                  CERRAR MENU MOBILE ONCLICK
-    ===========================================================================*/
-
-    $(function(){
-      $(".navbar-collapse ul li a").on("click touch", function(){
-        $(".navbar-toggle").click();
-      });
-    });
+    $(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});
